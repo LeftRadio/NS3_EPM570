@@ -1,0 +1,212 @@
+Restore Archived Project report for NS3
+Thu Apr 19 23:56:15 2012
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Thu Apr 19 23:56:15 2012 ;
+; Revision Name                   ; NS3                                   ;
+; Top-level Entity Name           ; NS3                                   ;
+; Family                          ; MAX II                                ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Projects/Altera/NS3_out/NS3_tmp_archive.qar' into the 'C:/Projects/Altera/NS3_HWrev2_8____19_04_12/' directory
+Info: Generated report 'NS3.restore.rpt'
+
+
++--------------------------------+
+; Files Restored                 ;
++--------------------------------+
+; File Name                      ;
++--------------------------------+
+; LA Trigg/lpm_and2.bsf          ;
+; LA Trigg/lpm_and2.inc          ;
+; LA Trigg/lpm_and2.qip          ;
+; LA Trigg/lpm_and2.tdf          ;
+; LA Trigg/lpm_and3.bsf          ;
+; LA Trigg/lpm_and3.inc          ;
+; LA Trigg/lpm_and3.qip          ;
+; LA Trigg/lpm_and3.tdf          ;
+; LA Trigg/lpm_and4.bsf          ;
+; LA Trigg/lpm_and4.inc          ;
+; LA Trigg/lpm_and4.qip          ;
+; LA Trigg/lpm_and4.tdf          ;
+; LA Trigg/lpm_counter1.bsf      ;
+; LA Trigg/lpm_counter1.inc      ;
+; LA Trigg/lpm_counter1.qip      ;
+; LA Trigg/lpm_counter1.tdf      ;
+; LA Trigg/lpm_counter2.bsf      ;
+; LA Trigg/lpm_counter2.inc      ;
+; LA Trigg/lpm_counter2.qip      ;
+; LA Trigg/lpm_counter2.tdf      ;
+; LA Trigg/lpm_mux2.bsf          ;
+; LA Trigg/lpm_mux2.inc          ;
+; LA Trigg/lpm_mux2.qip          ;
+; LA Trigg/lpm_mux2.tdf          ;
+; LA Trigg/lpm_or2.bsf           ;
+; LA Trigg/lpm_or2.inc           ;
+; LA Trigg/lpm_or2.qip           ;
+; LA Trigg/lpm_or2.tdf           ;
+; LA Trigg/lpm_or3.bsf           ;
+; LA Trigg/lpm_or3.inc           ;
+; LA Trigg/lpm_or3.qip           ;
+; LA Trigg/lpm_or3.tdf           ;
+; Decimation_counter.v           ;
+; MIN_MAX.v                      ;
+; NS3.bdf                        ;
+; NS3.dpf                        ;
+; NS3.qpf                        ;
+; NS3.qsf                        ;
+; NS3.sdc                        ;
+; NS3.vwf                        ;
+; NS3_assignment_defaults.qdf    ;
+; PWM_BackLight.v                ;
+; Read_counter.tdf               ;
+; Registers.v                    ;
+; Synchronization.v              ;
+; WIN_Counter.v                  ;
+; altufm_osc0.bsf                ;
+; altufm_osc0.inc                ;
+; altufm_osc0.qip                ;
+; altufm_osc0.tdf                ;
+; altufm_osc0_altufm_osc_lv5.tdf ;
+; assignment_defaults.qdf        ;
+; cntADDR.tdf                    ;
+; comp.tdf                       ;
+; db/NS3.sim.cvwf                ;
+; lpm_and0.bsf                   ;
+; lpm_and0.inc                   ;
+; lpm_and0.qip                   ;
+; lpm_and0.tdf                   ;
+; lpm_and1.bsf                   ;
+; lpm_and1.inc                   ;
+; lpm_and1.qip                   ;
+; lpm_and1.tdf                   ;
+; lpm_bustri0.tdf                ;
+; lpm_bustri1.bsf                ;
+; lpm_bustri1.inc                ;
+; lpm_bustri1.qip                ;
+; lpm_bustri1.tdf                ;
+; lpm_bustri2.bsf                ;
+; lpm_bustri2.inc                ;
+; lpm_bustri2.qip                ;
+; lpm_bustri2.tdf                ;
+; lpm_bustri3.bsf                ;
+; lpm_bustri3.inc                ;
+; lpm_bustri3.qip                ;
+; lpm_bustri3.tdf                ;
+; lpm_compare0.tdf               ;
+; lpm_compare1.tdf               ;
+; lpm_compare_mp.tdf             ;
+; lpm_constant2.tdf              ;
+; lpm_counter0.tdf               ;
+; lpm_counter1.bsf               ;
+; lpm_counter1.inc               ;
+; lpm_counter1.qip               ;
+; lpm_counter1.tdf               ;
+; lpm_dff0.tdf                   ;
+; lpm_dff1.tdf                   ;
+; lpm_dff2.tdf                   ;
+; lpm_dff3.bsf                   ;
+; lpm_dff3.inc                   ;
+; lpm_dff3.qip                   ;
+; lpm_dff3.v                     ;
+; lpm_dff3_bb.v                  ;
+; lpm_dff4.bsf                   ;
+; lpm_dff4.inc                   ;
+; lpm_dff4.qip                   ;
+; lpm_dff4.tdf                   ;
+; lpm_dff8.tdf                   ;
+; lpm_dff9.tdf                   ;
+; lpm_dff_min.bsf                ;
+; lpm_dff_min.inc                ;
+; lpm_dff_min.qip                ;
+; lpm_dff_min.tdf                ;
+; lpm_latch0.bsf                 ;
+; lpm_latch0.inc                 ;
+; lpm_latch0.qip                 ;
+; lpm_latch0.tdf                 ;
+; lpm_mux0.tdf                   ;
+; lpm_mux1.tdf                   ;
+; lpm_mux2.bsf                   ;
+; lpm_mux2.inc                   ;
+; lpm_mux2.qip                   ;
+; lpm_mux2.tdf                   ;
+; lpm_mux3.bsf                   ;
+; lpm_mux3.inc                   ;
+; lpm_mux3.qip                   ;
+; lpm_mux3.tdf                   ;
+; lpm_mux4.bsf                   ;
+; lpm_mux4.inc                   ;
+; lpm_mux4.qip                   ;
+; lpm_mux4.v                     ;
+; lpm_mux4_bb.v                  ;
+; lpm_mux5.tdf                   ;
+; lpm_mux6.tdf                   ;
+; lpm_mux8.bsf                   ;
+; lpm_mux8.inc                   ;
+; lpm_mux8.qip                   ;
+; lpm_mux8.tdf                   ;
+; lpm_or0.bsf                    ;
+; lpm_or0.inc                    ;
+; lpm_or0.qip                    ;
+; lpm_or0.tdf                    ;
+; lpm_or1.bsf                    ;
+; lpm_or1.inc                    ;
+; lpm_or1.qip                    ;
+; lpm_or1.tdf                    ;
+; lpm_xor0.bsf                   ;
+; lpm_xor0.inc                   ;
+; lpm_xor0.qip                   ;
+; lpm_xor0.tdf                   ;
+; lpm_xor1.bsf                   ;
+; lpm_xor1.inc                   ;
+; lpm_xor1.qip                   ;
+; lpm_xor1.tdf                   ;
+; trigger.v                      ;
++--------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

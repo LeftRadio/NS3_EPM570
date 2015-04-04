@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.387 ns
+From           : OUT_WIN
+To             : Synchronization:inst4|trigger:trigger_1|last_event_reg_RTM07_RTM052_RTM1134
+From Clock     : --
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.294 ns
+From           : lpm_dff4:inst21|lpm_ff:lpm_ff_component|dffs[4]
+To             : LA_0
+From Clock     : IN_CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.939 ns
+From           : RS
+To             : MCU_DATA[1]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.555 ns
+From           : ADC_DATA_A[5]
+To             : MIN_MAX:inst38|DATA_REG[5]
+From Clock     : --
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'IN_CLK'
+Slack          : 1.957 ns
+Required Time  : 80.00 MHz ( period = 12.500 ns )
+Actual Time    : 94.85 MHz ( period = 10.543 ns )
+From           : Decimation_counter:inst13|Deicimation_reg[14]
+To             : Decimation_counter:inst13|Deicimation_reg[6]
+From Clock     : IN_CLK
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Clock Hold: 'IN_CLK'
+Slack          : 1.382 ns
+Required Time  : 80.00 MHz ( period = 12.500 ns )
+Actual Time    : N/A
+From           : lpm_dff_min:inst40|lpm_ff:lpm_ff_component|dffs[5]
+To             : lpm_mux8:inst37|lpm_mux:lpm_mux_component|mux_d7e:auto_generated|external_latency_ffsa[5]
+From Clock     : IN_CLK
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
