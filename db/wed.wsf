@@ -9261,10 +9261,10 @@ VECTOR("C:/Projects/Altera/NS3_HWrev2_8____07_12_12/db/HW2_8.sim.cvwf")
 VECTOR("C:/Projects/Altera/NS3_HWrev3_0____11_12_13/db/HW2_8.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 3317833;
-		ZEND = 4009159;
+		ZBEGIN = 1884964;
+		ZEND = 2273352;
 		NUMERATOR = 1011;
-		DENOMINATOR = 691326;
+		DENOMINATOR = 388388;
 		TOP_INDEX = 4;
 	}
 	CLOCK{

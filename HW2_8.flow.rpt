@@ -1,5 +1,5 @@
 Flow report for HW2_8
-Sat Apr 04 06:49:49 2015
+Sun Apr 05 17:19:13 2015
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Sat Apr 04 06:49:48 2015        ;
+; Flow Status             ; Successful - Sun Apr 05 17:19:13 2015        ;
 ; Quartus II Version      ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name           ; HW2_8                                        ;
 ; Top-level Entity Name   ; NS3                                          ;
@@ -46,7 +46,7 @@ applicable agreement for further details.
 ; Device                  ; EPM570T144C5                                 ;
 ; Timing Models           ; Final                                        ;
 ; Met timing requirements ; Yes                                          ;
-; Total logic elements    ; 502 / 570 ( 88 % )                           ;
+; Total logic elements    ; 519 / 570 ( 91 % )                           ;
 ; Total pins              ; 98 / 116 ( 84 % )                            ;
 ; Total virtual pins      ; 0                                            ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                                ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/04/2015 06:48:41 ;
+; Start date & time ; 04/05/2015 17:18:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HW2_8               ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 ; Assignment Name                         ; Value                                                 ; Default Value                  ; Entity Name ; Section Id     ;
 +-----------------------------------------+-------------------------------------------------------+--------------------------------+-------------+----------------+
 ; ALWAYS_ENABLE_INPUT_BUFFERS             ; On                                                    ; Off                            ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                   ; 120901460567.142811932003744                          ; --                             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                   ; 120901460567.142824352103396                          ; --                             ; --          ; --             ;
 ; ENABLE_LOGIC_ANALYZER_INTERFACE         ; Off                                                   ; --                             ; --          ; --             ;
 ; FITTER_EFFORT                           ; Standard Fit                                          ; Auto Fit                       ; --          ; --             ;
 ; FMAX_REQUIREMENT                        ; 80 MHz                                                ; --                             ; --          ; --             ;
@@ -95,6 +95,10 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                            ; LPM_MUX                                               ; --                             ; --          ; --             ;
 ; IP_TOOL_NAME                            ; LPM_FF                                                ; --                             ; --          ; --             ;
 ; IP_TOOL_NAME                            ; LPM_MUX                                               ; --                             ; --          ; --             ;
+; IP_TOOL_NAME                            ; LPM_COMPARE                                           ; --                             ; --          ; --             ;
+; IP_TOOL_NAME                            ; LPM_INV                                               ; --                             ; --          ; --             ;
+; IP_TOOL_VERSION                         ; 9.1                                                   ; --                             ; --          ; --             ;
+; IP_TOOL_VERSION                         ; 9.1                                                   ; --                             ; --          ; --             ;
 ; IP_TOOL_VERSION                         ; 9.1                                                   ; --                             ; --          ; --             ;
 ; IP_TOOL_VERSION                         ; 9.1                                                   ; --                             ; --          ; --             ;
 ; IP_TOOL_VERSION                         ; 9.1                                                   ; --                             ; --          ; --             ;
@@ -187,6 +191,12 @@ applicable agreement for further details.
 ; MISC_FILE                               ; lpm_mux7.tdf                                          ; --                             ; --          ; --             ;
 ; MISC_FILE                               ; lpm_mux7.bsf                                          ; --                             ; --          ; --             ;
 ; MISC_FILE                               ; lpm_mux7.inc                                          ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_compare2.bsf                                      ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_compare2_bb.v                                     ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_compare2.inc                                      ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_inv0.bsf                                          ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_inv0_bb.v                                         ; --                             ; --          ; --             ;
+; MISC_FILE                               ; lpm_inv0.inc                                          ; --                             ; --          ; --             ;
 ; OPTIMIZE_HOLD_TIMING                    ; All Paths                                             ; IO Paths and Minimum TPD Paths ; --          ; --             ;
 ; OPTIMIZE_POWER_DURING_SYNTHESIS         ; Off                                                   ; Normal compilation             ; --          ; --             ;
 ; PHYSICAL_SYNTHESIS_COMBO_LOGIC          ; On                                                    ; Off                            ; --          ; --             ;
@@ -208,11 +218,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:10     ; 1.0                     ; 208 MB              ; 00:00:12                           ;
-; Fitter                  ; 00:00:11     ; 1.0                     ; 180 MB              ; 00:00:12                           ;
+; Analysis & Synthesis    ; 00:00:10     ; 1.0                     ; 210 MB              ; 00:00:11                           ;
+; Fitter                  ; 00:00:14     ; 1.0                     ; 180 MB              ; 00:00:13                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 166 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 137 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:24     ; --                      ; --                  ; 00:00:28                           ;
+; Classic Timing Analyzer ; 00:00:03     ; 1.0                     ; 137 MB              ; 00:00:04                           ;
+; Total                   ; 00:00:28     ; --                      ; --                  ; 00:00:29                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -253,3 +253,5 @@ set_global_assignment -name ALWAYS_ENABLE_INPUT_BUFFERS ON
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name QIP_FILE lpm_mux7.qip
 set_global_assignment -name QIP_FILE lpm_compare2.qip
+set_global_assignment -name QIP_FILE lpm_inv0.qip
+set_global_assignment -name VERILOG_FILE LA_Sync.v

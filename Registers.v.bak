@@ -35,11 +35,11 @@ output reg [7:0]    Trigger_level_Down,
 //output reg [7:0]    TRIG_MASK_reg,
 output reg [17:0]   WIN_DATA,
 output reg [7:0]    Delay,
-
 output reg          Start_Write_s,
 output reg          Enable_Trigger,
-//output reg          INTRL_0,
-//output reg          INTRL_1,
+
+output INTRL_0,
+output INTRL_1,
 output Sync_channel_sel,
 output Sync_ON,
 output Sync_OUT_WIN,
@@ -68,8 +68,8 @@ assign ReadCounterEN		  = cnfPin[3];
 assign Read_SRAM_UP           = cnfPin[4];
 assign ReadCounter_sLoad      = cnfPinB[0];
 
-assign INTRL_0      = cnfPinB[1];
-assign INTRL_1      = cnfPinB[2];
+assign INTRL_0                = cnfPinB[1];
+assign INTRL_1                = cnfPinB[2];
 
 assign OSC_LA                 = cnfPin[5];
 assign AND_OR_LA_TRIGG        = cnfPin[6];

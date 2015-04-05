@@ -10,5 +10,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux1:inst42|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_l9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux1:inst44|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_l9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux8:inst30|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_d7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_compare2:inst25|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_64g.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

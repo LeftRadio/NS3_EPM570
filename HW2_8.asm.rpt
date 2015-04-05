@@ -1,5 +1,5 @@
 Assembler report for HW2_8
-Sat Apr 04 06:49:44 2015
+Sun Apr 05 17:19:08 2015
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Apr 04 06:49:44 2015 ;
+; Assembler Status      ; Successful - Sun Apr 05 17:19:08 2015 ;
 ; Revision Name         ; HW2_8                                 ;
 ; Top-level Entity Name ; NS3                                   ;
 ; Family                ; MAX II                                ;
@@ -91,7 +91,7 @@ applicable agreement for further details.
 +----------------+----------------------------------------------------------------+
 ; Device         ; EPM570T144C5                                                   ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                     ;
-; Checksum       ; 0x002E2B59                                                     ;
+; Checksum       ; 0x002DF36B                                                     ;
 +----------------+----------------------------------------------------------------+
 
 
@@ -101,13 +101,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 04 06:49:43 2015
+    Info: Processing started: Sun Apr 05 17:19:07 2015
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off NS3_HWrev2_8 -c HW2_8
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 166 megabytes
-    Info: Processing ended: Sat Apr 04 06:49:44 2015
+    Info: Processing ended: Sun Apr 05 17:19:08 2015
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
