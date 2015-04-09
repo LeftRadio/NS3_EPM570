@@ -16,6 +16,7 @@
 FUNCTION lpm_counter2 
 (
 	clock,
+	cnt_en,
 	sclr
 )
 

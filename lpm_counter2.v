@@ -38,11 +38,13 @@
 // synopsys translate_on
 module lpm_counter2 (
 	clock,
+	cnt_en,
 	sclr,
 	cout,
 	q);
 
 	input	  clock;
+	input	  cnt_en;
 	input	  sclr;
 	output	  cout;
 	output	[7:0]  q;
@@ -55,6 +57,7 @@ module lpm_counter2 (
 	lpm_counter	lpm_counter_component (
 				.sclr (sclr),
 				.clock (clock),
+				.cnt_en (cnt_en),
 				.cout (sub_wire0),
 				.q (sub_wire1),
 				.aclr (1'b0),
@@ -62,7 +65,6 @@ module lpm_counter2 (
 				.aset (1'b0),
 				.cin (1'b1),
 				.clk_en (1'b1),
-				.cnt_en (1'b1),
 				.data ({8{1'b0}}),
 				.eq (),
 				.sload (1'b0),
@@ -85,7 +87,7 @@ endmodule
 // Retrieval info: PRIVATE: ASET NUMERIC "0"
 // Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
-// Retrieval info: PRIVATE: CNT_EN NUMERIC "0"
+// Retrieval info: PRIVATE: CNT_EN NUMERIC "1"
 // Retrieval info: PRIVATE: CarryIn NUMERIC "0"
 // Retrieval info: PRIVATE: CarryOut NUMERIC "1"
 // Retrieval info: PRIVATE: Direction NUMERIC "0"
@@ -103,11 +105,13 @@ endmodule
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
+// Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL cnt_en
 // Retrieval info: USED_PORT: cout 0 0 0 0 OUTPUT NODEFVAL cout
 // Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 // Retrieval info: USED_PORT: sclr 0 0 0 0 INPUT NODEFVAL sclr
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
+// Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
 // Retrieval info: CONNECT: cout 0 0 0 0 @cout 0 0 0 0
 // Retrieval info: CONNECT: @sclr 0 0 0 0 sclr 0 0 0 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all

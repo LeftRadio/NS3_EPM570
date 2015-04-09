@@ -1,0 +1,155 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 248 336)
+	(text "Synchronization" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Trg_Lv_UP[7..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "Trg_Lv_UP[7..0]" (rect 21 27 102 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Trg_Lv_DOWN[7..0]" (rect 0 0 101 12)(font "Arial" ))
+		(text "Trg_Lv_DOWN[7..0]" (rect 21 43 122 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "DATA_IN_A[7..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "DATA_IN_A[7..0]" (rect 21 59 105 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DATA_IN_B[7..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "DATA_IN_B[7..0]" (rect 21 75 105 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "WIN_DATA[17..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "WIN_DATA[17..0]" (rect 21 91 109 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Delay[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "Delay[7..0]" (rect 21 107 76 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Sync_channel_sel" (rect 0 0 89 12)(font "Arial" ))
+		(text "Sync_channel_sel" (rect 21 123 110 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Sync_OUT_WIN" (rect 0 0 82 12)(font "Arial" ))
+		(text "Sync_OUT_WIN" (rect 21 139 103 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "sync_ON" (rect 0 0 47 12)(font "Arial" ))
+		(text "sync_ON" (rect 21 155 68 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Start_Write" (rect 0 0 55 12)(font "Arial" ))
+		(text "Start_Write" (rect 21 171 76 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "CLK_EN" (rect 0 0 42 12)(font "Arial" ))
+		(text "CLK_EN" (rect 21 187 63 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "Enable_Trig" (rect 0 0 56 12)(font "Arial" ))
+		(text "Enable_Trig" (rect 21 203 77 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "LA_TRIGG_IN" (rect 0 0 70 12)(font "Arial" ))
+		(text "LA_TRIGG_IN" (rect 21 219 91 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "LA_OR_OSC_TRIGG" (rect 0 0 105 12)(font "Arial" ))
+		(text "LA_OR_OSC_TRIGG" (rect 21 235 126 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "LA_RLE_CNT_EN" (rect 0 0 89 12)(font "Arial" ))
+		(text "LA_RLE_CNT_EN" (rect 21 251 110 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 267 42 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "Write_Ready" (rect 0 0 64 12)(font "Arial" ))
+		(text "Write_Ready" (rect 147 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 1))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "sync_state_out" (rect 0 0 76 12)(font "Arial" ))
+		(text "sync_state_out" (rect 135 43 211 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 304)(line_width 1))
+	)
+)

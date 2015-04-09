@@ -3,7 +3,7 @@ module WIN_Counter
 input [17:0]       WIN_DATA,
 input              CLK_EN,
 input              Start_Write,
-input              trigger_event_in,
+input              event_in,
 input              CLK,
 
 output reg         Write_Ready
@@ -21,7 +21,7 @@ always @(posedge CLK) begin
    else if(CLK_EN == 1) begin
           
        /* если пришло срабатывание триггера то запускаем счетчик, считать предысторию */
-       if(trigger_event_in == 1) begin 
+       if(event_in == 1) begin 
              
            if(WINcnt == 0) begin  // если досчитали
                Write_Ready <= 1;  // выдаем сигнал о окончании записи

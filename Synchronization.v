@@ -18,17 +18,21 @@ input Start_Write, CLK_EN,
 input Enable_Trig,
 input LA_TRIGG_IN,
 input LA_OR_OSC_TRIGG,
+input LA_RLE_CNT_EN,
 input CLK,
    
 output Write_Ready,
 output sync_state_out
+
 //output [17:0] WIN_DATA_OUT
 );
 
 wire trigger_event;
+wire event_out;
 wire Wr_Ready;
 
 assign Write_Ready = Start_Write & Wr_Ready;
+assign event_out = trigger_event & LA_RLE_CNT_EN;
 
 trigger  trigger_1
          (
@@ -55,10 +59,9 @@ WIN_Counter  WIN_Counter_1
          (         
          .CLK(CLK),
          .CLK_EN(CLK_EN),
-         .WIN_DATA(WIN_DATA),
-         //.WINcnt(WIN_DATA_OUT),
+         .WIN_DATA(WIN_DATA),         
          .Start_Write(Start_Write),         
-         .trigger_event_in(trigger_event),
+         .event_in(event_out),
          .Write_Ready(Wr_Ready)                  
          );
 

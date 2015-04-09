@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.641 ns
-From           : LA_DATA_IN[6]
-To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[6]
+Actual Time    : 14.609 ns
+From           : ADC_DATA_A[1]
+To             : MIN_MAX:inst38|MIN_DATA_OUT[0]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.654 ns
+Actual Time    : 16.583 ns
 From           : Registers:inst|Start_Write_s
-To             : SRAM_CE
+To             : SRAM_OE
 From Clock     : IN_CLK
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 27.884 ns
+Actual Time    : 24.956 ns
 From           : RS
-To             : MCU_DATA[2]
+To             : MCU_DATA[0]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,29 +35,29 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.986 ns
-From           : LA_DATA_IN[2]
-To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[2]
+Actual Time    : -1.614 ns
+From           : LA_DATA_IN[1]
+To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[1]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
 
 Type           : Clock Setup: 'IN_CLK'
-Slack          : 1.158 ns
+Slack          : 0.659 ns
 Required Time  : 80.00 MHz ( period = 12.500 ns )
-Actual Time    : 88.17 MHz ( period = 11.342 ns )
-From           : MIN_MAX:inst38|DATA_REG[2]
-To             : Synchronization:inst4|trigger:trigger_1|last_event_reg
+Actual Time    : 84.45 MHz ( period = 11.841 ns )
+From           : Registers:inst|Start_Write_s
+To             : MIN_MAX:inst43|MAX_DATA_OUT[3]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0
 
 Type           : Clock Hold: 'IN_CLK'
-Slack          : 1.375 ns
+Slack          : 1.374 ns
 Required Time  : 80.00 MHz ( period = 12.500 ns )
 Actual Time    : N/A
-From           : Registers:inst|STR
-To             : Registers:inst|Start_Write_s
+From           : Registers:inst|ENTr
+To             : Registers:inst|Enable_Trigger
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0

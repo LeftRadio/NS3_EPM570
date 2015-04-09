@@ -91,7 +91,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 23        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : 24        :        :                   :         : 1         :                
 VCCIO1                       : 25        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 26        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 27        :        :                   :         : 1         :                
+I_CLK_EN                     : 27        : output : 3.3-V LVTTL       :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 29        :        :                   :         : 1         :                
 S2                           : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
@@ -148,7 +148,7 @@ SRAM_ADRES[17]               : 80        : output : 3.3-V LVTTL       :         
 BackLight_OUT                : 81        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 82        : power  :                   : 3.3V    : 2         :                
 GNDIO                        : 83        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 2         :                
+I_CNT_EN                     : 84        : output : 3.3-V LVTTL       :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 85        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 86        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 87        :        :                   :         : 2         :                
@@ -196,7 +196,7 @@ GNDINT                       : 128       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : 129       :        :                   :         : 2         :                
 ADC_CLK                      : 130       : output : 3.3-V LVTTL       :         : 2         : Y              
 ADC_CLK1                     : 131       : output : 3.3-V LVTTL       :         : 2         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 132       :        :                   :         : 2         :                
+I_EN                         : 132       : output : 3.3-V LVTTL       :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 133       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 134       :        :                   :         : 2         :                
 GNDIO                        : 135       : gnd    :                   :         :           :                

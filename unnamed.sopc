@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="unnamed">
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element clock_crossing_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element ssram_0.s1
+   {
+      datum baseAddress
+      {
+         value = "1048576";
+         type = "long";
+      }
+   }
+   element ssram_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element tri_state_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="deviceFamily" value="MAXII" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="hardcopyCompatible" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="projectName">NS3_HWrev3_2.quartus</parameter>
+ <parameter name="systemHash" value="-4410646937" />
+ <parameter name="timeStamp" value="1428607966568" />
+ <module name="clk_0" kind="clock_source" version="9.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+ </module>
+ <module
+   name="ssram_0"
+   kind="altera_avalon_cy7c1380_ssram"
+   version="9.1"
+   enabled="1">
+  <parameter name="readLatency" value="2" />
+  <parameter name="sharedPorts" value="" />
+  <parameter name="simMakeModel" value="true" />
+  <parameter name="size" value="1" />
+ </module>
+ <module
+   name="tri_state_bridge_0"
+   kind="altera_avalon_tri_state_bridge"
+   version="9.1"
+   enabled="1">
+  <parameter name="registerIncomingSignals" value="true" />
+ </module>
+ <module
+   name="clock_crossing_0"
+   kind="altera_avalon_clock_crossing"
+   version="9.1"
+   enabled="1">
+  <parameter name="dataWidth" value="1024" />
+  <parameter name="downstreamFIFODepth" value="8" />
+  <parameter name="downstreamUseRegister" value="true" />
+  <parameter name="masterSyncDepth" value="3" />
+  <parameter name="maxBurstSize" value="8" />
+  <parameter name="slaveSyncDepth" value="3" />
+  <parameter name="upstreamFIFODepth" value="1024" />
+  <parameter name="upstreamUseRegister" value="true" />
+  <parameter name="useBurstCount" value="false" />
+ </module>
+ <connection kind="clock" version="9.1" start="clk_0.clk" end="ssram_0.clk" />
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk_0.clk"
+   end="tri_state_bridge_0.clk" />
+ <connection
+   kind="avalon_tristate"
+   version="9.1"
+   start="tri_state_bridge_0.tristate_master"
+   end="ssram_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00100000" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk_0.clk"
+   end="clock_crossing_0.clk_s1" />
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk_0.clk"
+   end="clock_crossing_0.clk_m1" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="clock_crossing_0.m1"
+   end="tri_state_bridge_0.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+</system>

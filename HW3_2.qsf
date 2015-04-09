@@ -234,7 +234,7 @@ set_global_assignment -name QIP_FILE lpm_or1.qip
 set_global_assignment -name QIP_FILE lpm_xor1.qip
 set_global_assignment -name QIP_FILE lpm_mux8.qip
 set_global_assignment -name QIP_FILE lpm_ff0.qip
-set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
 set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf"
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf"
@@ -254,4 +254,10 @@ set_global_assignment -name QIP_FILE lpm_inv0.qip
 set_global_assignment -name QIP_FILE lpm_counter2.qip
 set_global_assignment -name QIP_FILE lpm_and2.qip
 set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
-set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE PESSIMISTIC
+set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE REALISTIC
+set_global_assignment -name QIP_FILE lpm_dff5.qip
+set_global_assignment -name EDA_RESYNTHESIS_TOOL "Synplify Premier"
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER OFF
+set_global_assignment -name SMART_RECOMPILE OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
