@@ -73,7 +73,7 @@ always @(posedge CLK) begin
 
 	SRAM_WR <= ~(CLK_EN & LA_RLE_CNT_EN);
 
-end;
+end
 
 endmodule 
 

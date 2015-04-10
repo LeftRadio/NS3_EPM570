@@ -22,7 +22,7 @@ input LA_OR_OSC_TRIGG,
 input LA_RLE_CNT_EN,
 input CLK,
    
-output Write_Ready,
+output reg Write_Ready,
 output sync_state_out,
 output reg SRAM_WR,
 output [17:0] ADDR_CNT_OUT
@@ -32,7 +32,7 @@ wire trigger_event;
 wire event_out;
 wire Wr_Ready;
 
-assign Write_Ready = Start_Write & Wr_Ready;
+//assign Write_Ready = Start_Write & Wr_Ready;
 assign event_out = trigger_event & LA_RLE_CNT_EN;
 //assign SRAM_WR = ~(CLK_EN & LA_RLE_CNT_EN);
 
@@ -72,7 +72,8 @@ WIN_Counter  WIN_Counter_1
 always @(posedge CLK) begin
 
 	SRAM_WR <= ~(CLK_EN & LA_RLE_CNT_EN);
-
+	//Write_Ready <= (Start_Write & Wr_Ready);
+	Write_Ready <= Wr_Ready;
 end
 
 endmodule 

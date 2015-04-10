@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.504 ns
-From           : ADC_DATA_B[7]
-To             : MIN_MAX:inst81|MIN_DATA_OUT[5]
+Actual Time    : 3.832 ns
+From           : ADC_DATA_A[1]
+To             : MIN_MAX:inst80|SYNC_OUT_DATA[1]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.694 ns
+Actual Time    : 15.258 ns
 From           : Registers:inst|Start_Write_s
-To             : SRAM_OE
+To             : SRAM_CE
 From Clock     : IN_CLK
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 24.981 ns
-From           : RS
-To             : MCU_DATA[3]
+Actual Time    : 19.708 ns
+From           : SRAM_DATA[12]
+To             : MCU_DATA[4]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,29 +35,49 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.265 ns
-From           : LA_DATA_IN[1]
-To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[1]
+Actual Time    : -1.003 ns
+From           : LA_DATA_IN[4]
+To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[4]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
 
 Type           : Clock Setup: 'IN_CLK'
-Slack          : -0.451 ns
-Required Time  : 80.00 MHz ( period = 12.500 ns )
-Actual Time    : 77.21 MHz ( period = 12.951 ns )
-From           : MIN_MAX:inst80|SYNC_OUT_DATA[2]
-To             : Synchronization:inst74|trigger:trigger_1|SlCounter[7]
+Slack          : 1.175 ns
+Required Time  : 85.01 MHz ( period = 11.764 ns )
+Actual Time    : 94.44 MHz ( period = 10.589 ns )
+From           : Synchronization:inst74|trigger:trigger_1|DATA_SYNC[1]
+To             : Synchronization:inst74|trigger:trigger_1|SlCounter[1]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
-Failed Paths   : 68
+Failed Paths   : 0
 
 Type           : Clock Hold: 'IN_CLK'
-Slack          : 1.390 ns
-Required Time  : 80.00 MHz ( period = 12.500 ns )
+Slack          : 1.375 ns
+Required Time  : 85.01 MHz ( period = 11.764 ns )
 Actual Time    : N/A
-From           : Registers:inst|STR
-To             : Registers:inst|Start_Write_s
+From           : MIN_MAX:inst80|MAX_DATA_OUT[4]
+To             : MIN_MAX:inst80|SRAM_OUT_DATA[4]
+From Clock     : IN_CLK
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Recovery: 'IN_CLK'
+Slack          : 2.917 ns
+Required Time  : 15.112 ns
+Actual Time    : 12.195 ns
+From           : Registers:inst|Start_Write_s
+To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[16]
+From Clock     : IN_CLK
+To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Removal: 'IN_CLK'
+Slack          : 8.259 ns
+Required Time  : 3.902 ns
+Actual Time    : 12.161 ns
+From           : Registers:inst|Start_Write_s
+To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[17]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0
@@ -70,7 +90,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 68
+Failed Paths   : 0
 
 --------------------------------------------------------------------------------------
 

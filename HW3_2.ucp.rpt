@@ -1,0 +1,352 @@
+Classic Timing Analyzer Constraint Check report for HW3_2
+Fri Apr 10 16:52:17 2015
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Timing Constraint Check Summary
+  4. Clocks Status Summary
+  5. Unconstrained I/O Paths (Setup)
+  6. Unconstrained I/O Paths (Hold)
+  7. Timing Constraint Check Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------+
+; Timing Constraint Check Summary                                                                ;
++-------------------------------------------------+----------------------------------------------+
+; Classic Timing Analyzer Constraint Check Status ; Analyzed - Fri Apr 10 16:52:13 2015          ;
+; Quartus II Version                              ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                                   ; HW3_2                                        ;
+; Top-level Entity Name                           ; NS3                                          ;
+; Unconstrained Clocks                            ; 0                                            ;
+; Unconstrained Paths (Setup)                     ; 120                                          ;
+; Unconstrained Reg-to-Reg Paths (Setup)          ; 0                                            ;
+; Unconstrained I/O Paths (Setup)                 ; 120                                          ;
+; Unconstrained Paths (Hold)                      ; 120                                          ;
+; Unconstrained Reg-to-Reg Paths (Hold)           ; 0                                            ;
+; Unconstrained I/O Paths (Hold)                  ; 120                                          ;
++-------------------------------------------------+----------------------------------------------+
+
+
++---------------------------+
+; Clocks Status Summary     ;
++------------+--------------+
+; Clock Name ; Clock Status ;
++------------+--------------+
+; IN_CLK     ; Constrained  ;
++------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Unconstrained I/O Paths (Setup)                                                                                                                                ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+; From Node                                       ; To Node                                         ; From Clk                    ; To Clk                       ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+; inst36                                          ; SRAM_WE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_CE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_OE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[0]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[1]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[2]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[3]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[4]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[5]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[6]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[7]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[8]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[9]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[10]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[11]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[12]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[13]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[14]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[15]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|SRAM_WR                  ; I_EN                                            ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|Write_Ready              ; SRAM_CE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|Write_Ready              ; Write_Ready                                     ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[0]  ; SRAM_ADRES[0]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[1]  ; SRAM_ADRES[1]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[2]  ; SRAM_ADRES[2]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[3]  ; SRAM_ADRES[3]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[4]  ; SRAM_ADRES[4]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[5]  ; SRAM_ADRES[5]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[6]  ; SRAM_ADRES[6]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[7]  ; SRAM_ADRES[7]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[8]  ; SRAM_ADRES[8]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[9]  ; SRAM_ADRES[9]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[10] ; SRAM_ADRES[10]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[11] ; SRAM_ADRES[11]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[12] ; SRAM_ADRES[12]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[13] ; SRAM_ADRES[13]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[14] ; SRAM_ADRES[14]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[15] ; SRAM_ADRES[15]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[16] ; SRAM_ADRES[16]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[17] ; SRAM_ADRES[17]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[0]                 ; SRAM_DATA[0]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[1]                 ; SRAM_DATA[1]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[2]                 ; SRAM_DATA[2]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[3]                 ; SRAM_DATA[3]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[4]                 ; SRAM_DATA[4]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[5]                 ; SRAM_DATA[5]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[6]                 ; SRAM_DATA[6]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[7]                 ; SRAM_DATA[7]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[0]                 ; SRAM_DATA[8]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[1]                 ; SRAM_DATA[9]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[2]                 ; SRAM_DATA[10]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[3]                 ; SRAM_DATA[11]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[4]                 ; SRAM_DATA[12]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[5]                 ; SRAM_DATA[13]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[6]                 ; SRAM_DATA[14]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[7]                 ; SRAM_DATA[15]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; ADC_DATA_A[0]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[0]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[1]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[1]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[2]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[2]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[3]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[3]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[4]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[4]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[5]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[5]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[6]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[6]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[7]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[7]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[0]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[0]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[1]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[1]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[2]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[2]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[3]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[3]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[4]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[4]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[5]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[5]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[6]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[6]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[7]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[7]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[0]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[0] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[1]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[1] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[2]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[2] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[3]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[3] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[4]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[4] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[5]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[5] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[6]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[6] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[7]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[7] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; IN_CLK                                          ; SRAM_CLK                                        ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; SRAM_CE                                         ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; SRAM_OE                                         ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[0]                                       ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[1]                                       ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[2]                                       ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[3]                                       ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[4]                                       ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[0]                                    ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[1]                                    ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[2]                                    ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[3]                                    ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[4]                                    ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[5]                                    ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[6]                                    ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[7]                                    ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[8]                                    ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[9]                                    ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[10]                                   ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[11]                                   ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[12]                                   ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[13]                                   ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[14]                                   ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[15]                                   ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Unconstrained I/O Paths (Hold)                                                                                                                                 ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+; From Node                                       ; To Node                                         ; From Clk                    ; To Clk                       ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+; inst36                                          ; SRAM_WE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_CE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_OE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[0]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[1]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[2]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[3]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[4]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[5]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[6]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[7]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[8]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[9]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[10]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[11]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[12]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[13]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[14]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Registers:inst|Start_Write_s                    ; SRAM_DATA[15]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|SRAM_WR                  ; I_EN                                            ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|Write_Ready              ; SRAM_CE                                         ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; Synchronization:inst74|Write_Ready              ; Write_Ready                                     ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[0]  ; SRAM_ADRES[0]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[1]  ; SRAM_ADRES[1]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[2]  ; SRAM_ADRES[2]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[3]  ; SRAM_ADRES[3]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[4]  ; SRAM_ADRES[4]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[5]  ; SRAM_ADRES[5]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[6]  ; SRAM_ADRES[6]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[7]  ; SRAM_ADRES[7]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[8]  ; SRAM_ADRES[8]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[9]  ; SRAM_ADRES[9]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[10] ; SRAM_ADRES[10]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[11] ; SRAM_ADRES[11]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[12] ; SRAM_ADRES[12]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[13] ; SRAM_ADRES[13]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[14] ; SRAM_ADRES[14]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[15] ; SRAM_ADRES[15]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[16] ; SRAM_ADRES[16]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[17] ; SRAM_ADRES[17]                                  ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[0]                 ; SRAM_DATA[0]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[1]                 ; SRAM_DATA[1]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[2]                 ; SRAM_DATA[2]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[3]                 ; SRAM_DATA[3]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[4]                 ; SRAM_DATA[4]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[5]                 ; SRAM_DATA[5]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[6]                 ; SRAM_DATA[6]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst80|SRAM_OUT_DATA[7]                 ; SRAM_DATA[7]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[0]                 ; SRAM_DATA[8]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[1]                 ; SRAM_DATA[9]                                    ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[2]                 ; SRAM_DATA[10]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[3]                 ; SRAM_DATA[11]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[4]                 ; SRAM_DATA[12]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[5]                 ; SRAM_DATA[13]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[6]                 ; SRAM_DATA[14]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; MIN_MAX:inst81|SRAM_OUT_DATA[7]                 ; SRAM_DATA[15]                                   ; IN_CLK                      ; (N/A, node is an OUTPUT PIN) ;
+; ADC_DATA_A[0]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[0]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[1]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[1]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[2]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[2]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[3]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[3]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[4]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[4]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[5]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[5]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[6]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[6]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_A[7]                                   ; MIN_MAX:inst80|SYNC_OUT_DATA[7]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[0]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[0]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[1]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[1]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[2]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[2]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[3]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[3]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[4]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[4]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[5]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[5]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[6]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[6]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; ADC_DATA_B[7]                                   ; MIN_MAX:inst81|SYNC_OUT_DATA[7]                 ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[0]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[0] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[1]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[1] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[2]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[2] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[3]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[3] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[4]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[4] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[5]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[5] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[6]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[6] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; LA_DATA_IN[7]                                   ; lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[7] ; (N/A, node is an INPUT PIN) ; IN_CLK                       ;
+; IN_CLK                                          ; SRAM_CLK                                        ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; SRAM_CE                                         ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; SRAM_OE                                         ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RD                                              ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; RS                                              ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[0]                                       ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[1]                                       ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[2]                                       ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[3]                                       ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; IN_KEY[4]                                       ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[0]                                    ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[1]                                    ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[2]                                    ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[3]                                    ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[4]                                    ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[5]                                    ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[6]                                    ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[7]                                    ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[8]                                    ; MCU_DATA[0]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[9]                                    ; MCU_DATA[1]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[10]                                   ; MCU_DATA[2]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[11]                                   ; MCU_DATA[3]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[12]                                   ; MCU_DATA[4]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[13]                                   ; MCU_DATA[5]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[14]                                   ; MCU_DATA[6]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
+; SRAM_DATA[15]                                   ; MCU_DATA[7]                                     ; (N/A, node is an INPUT PIN) ; (N/A, node is an OUTPUT PIN) ;
++-------------------------------------------------+-------------------------------------------------+-----------------------------+------------------------------+
+
+
++----------------------------------+
+; Timing Constraint Check Messages ;
++----------------------------------+
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Info: Design is not fully constrained for setup requirements.
+Info: Number of unconstrained clocks: 0.
+Info: Number of unconstrained paths: 120.
+Info: Number of unconstrained reg-to-reg paths: 0.
+Info: Number of unconstrained I/O paths: 120.
+Info: Design is not fully constrained for hold requirements.
+Info: Number of unconstrained clocks: 0.
+Info: Number of unconstrained paths: 120.
+Info: Number of unconstrained reg-to-reg paths: 0.
+Info: Number of unconstrained I/O paths: 120.
+Info: Quartus II Classic Timing Analyzer Constraint Check was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Fri Apr 10 16:52:18 2015
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+

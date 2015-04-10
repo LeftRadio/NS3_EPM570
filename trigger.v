@@ -26,9 +26,9 @@ output             trig_out             // выход триггера
 reg         first_event_reg;     // oneiaea aey ?ac?aoaiey n?aaaouaaiey o?eaaa?a
 reg         last_event_reg;      // nianoaaiii nai o?eaaa?
 reg [7:0]   SlCounter;           // caaa??ea
+reg [7:0]	DATA_SYNC;
 
-
-wire [7:0] DATA_SYNC = (sync_sourse == 0)? DATA_IN_A : DATA_IN_B;  // данные для синхронизации, в зависимости от sync_sourse, 0/1 - канал А или В соответсвенно
+  // данные для синхронизации, в зависимости от sync_sourse, 0/1 - канал А или В соответсвенно
 wire sync_state = (Trg_Lv_UP > DATA_SYNC) & (Trg_Lv_DOWN < DATA_SYNC)? ~Sync_OUT_WIN : Sync_OUT_WIN;  // условие триггера
 wire EN_Trig = Start_Write & Enable_Trig; // разрешение триггера
 
@@ -37,6 +37,10 @@ assign     trig_out = last_event_reg;            // auoia o?eaaa?a
 
 
 always @(posedge CLK) begin
+     
+     if(sync_sourse == 0) DATA_SYNC <= DATA_IN_A;
+     else DATA_SYNC <= DATA_IN_B;
+     //wire [7:0] DATA_SYNC = ()?  : DATA_IN_B;
      
      if(EN_Trig == 0) begin // триггер запрещен
      

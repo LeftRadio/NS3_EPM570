@@ -116,7 +116,7 @@ set_location_assignment PIN_114 -to MCU_DATA[6]
 set_location_assignment PIN_117 -to MCU_DATA[7]
 set_location_assignment PIN_77 -to SRAM_OE
 set_global_assignment -name SIMULATION_WITH_AUTO_GLITCH_FILTERING NEVER
-set_global_assignment -name FMAX_REQUIREMENT "80 MHz"
+set_global_assignment -name FMAX_REQUIREMENT "85 MHz"
 set_location_assignment PIN_5 -to S1
 set_location_assignment PIN_1 -to O_C_A
 set_location_assignment PIN_2 -to O_C_B
@@ -177,9 +177,9 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to LA_DATA_IN
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IN_CLK
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SRAM_DATA
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Write_Ready
-set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id IN_CLK
-set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
-set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name FMAX_REQUIREMENT "85 MHz" -section_id IN_CLK
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf"
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf"
 set_location_assignment PIN_131 -to ADC_CLK1
@@ -190,7 +190,7 @@ set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 50%
 set_global_assignment -name ALWAYS_ENABLE_INPUT_BUFFERS ON
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
-set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING OFF
 set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE REALISTIC
 set_global_assignment -name EDA_RESYNTHESIS_TOOL "Synplify Premier"
 set_global_assignment -name FLOW_ENABLE_RTL_VIEWER OFF
@@ -262,3 +262,9 @@ set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ADC_CLK1 -section_id IN_CLK_
 set_global_assignment -name ASSIGNMENT_GROUP_MEMBER IN_CLK -section_id IN_CLK_GRP
 set_instance_assignment -name CUT ON -from * -to ADC_CLK1
 set_instance_assignment -name CUT ON -from * -to ADC_CLK
+set_global_assignment -name DO_COMBINED_ANALYSIS OFF
+set_global_assignment -name ENABLE_RECOVERY_REMOVAL_ANALYSIS ON
+set_global_assignment -name ENABLE_CLOCK_LATENCY ON
+set_global_assignment -name REPORT_IO_PATHS_SEPARATELY ON
+set_global_assignment -name FLOW_ENABLE_TIMING_CONSTRAINT_CHECK ON
+set_global_assignment -name QIP_FILE lpm_dff6.qip

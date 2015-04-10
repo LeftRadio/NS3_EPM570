@@ -12,24 +12,32 @@ output reg          CLK_EN
 //assign Min_Max_Sel = CLK_EN;
 
 reg [23:0]  Deicimation_reg;
-
+reg str_wr;
 
 always @(posedge CLK) begin
 
-   if((Start_WR == 0) | (Deicimation_reg == 0)) begin
-       Deicimation_reg <= Deicimation_IN;
-       //if(Start_WR != 0)EN <= 1;
-       //else EN <=0;
-       EN <= Start_WR;
-   end
-   else begin
-       Deicimation_reg <= Deicimation_reg - 1'b1;
-       EN <= 0;
+	str_wr <= Start_WR;
+	
+	if(str_wr == 0) begin
+		EN <=0;
+		//Deicimation_reg <= Deicimation_IN;
+	end
+	else begin
+   
+		if(Deicimation_reg == 0) begin
+			Deicimation_reg <= Deicimation_IN;
+			EN <= 1;			
+		end
+		else begin
+			Deicimation_reg <= Deicimation_reg - 1'b1;
+			EN <= 0;
+		end
+   
+		CLK_EN <= EN;   
    end
    
-   CLK_EN <= EN;
    
-end
+end	// always
 
 
 

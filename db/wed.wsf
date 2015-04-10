@@ -23,8 +23,8 @@ applicable agreement for further details.
 VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 1671724;
-		ZEND = 1843756;
+		ZBEGIN = 1442915;
+		ZEND = 1614947;
 		NUMERATOR = 1011;
 		DENOMINATOR = 172032;
 		TOP_INDEX = 0;
@@ -918,7 +918,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "inst50";
+		SIGNAL = "I_EN";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -926,7 +926,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "I_EN";
+		SIGNAL = "EN0";
 		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
@@ -934,7 +934,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EN0";
+		SIGNAL = "EN1";
 		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
@@ -942,16 +942,8 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EN1";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "Registers:inst|Decimation";
-		INDEX = 114;
+		INDEX = 113;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -959,7 +951,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[23]";
-		INDEX = 115;
+		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -967,7 +959,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[22]";
-		INDEX = 116;
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -975,7 +967,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[21]";
-		INDEX = 117;
+		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -983,7 +975,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[20]";
-		INDEX = 118;
+		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -991,7 +983,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[19]";
-		INDEX = 119;
+		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -999,7 +991,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[18]";
-		INDEX = 120;
+		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1007,7 +999,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[17]";
-		INDEX = 121;
+		INDEX = 120;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1015,7 +1007,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[16]";
-		INDEX = 122;
+		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1023,7 +1015,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[15]";
-		INDEX = 123;
+		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1031,7 +1023,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[14]";
-		INDEX = 124;
+		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1039,7 +1031,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[13]";
-		INDEX = 125;
+		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1047,7 +1039,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[12]";
-		INDEX = 126;
+		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1055,7 +1047,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[11]";
-		INDEX = 127;
+		INDEX = 126;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1063,7 +1055,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[10]";
-		INDEX = 128;
+		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1071,7 +1063,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[9]";
-		INDEX = 129;
+		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1079,7 +1071,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[8]";
-		INDEX = 130;
+		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1087,7 +1079,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[7]";
-		INDEX = 131;
+		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1095,7 +1087,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[6]";
-		INDEX = 132;
+		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1103,7 +1095,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[5]";
-		INDEX = 133;
+		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1111,7 +1103,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[4]";
-		INDEX = 134;
+		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1119,7 +1111,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[3]";
-		INDEX = 135;
+		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1127,7 +1119,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[2]";
-		INDEX = 136;
+		INDEX = 135;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1135,7 +1127,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[1]";
-		INDEX = 137;
+		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1143,7 +1135,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[0]";
-		INDEX = 138;
+		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1151,7 +1143,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg";
-		INDEX = 139;
+		INDEX = 138;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1159,7 +1151,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[23]";
-		INDEX = 140;
+		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1167,7 +1159,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[22]";
-		INDEX = 141;
+		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1175,7 +1167,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[21]";
-		INDEX = 142;
+		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1183,7 +1175,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[20]";
-		INDEX = 143;
+		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1191,7 +1183,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[19]";
-		INDEX = 144;
+		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1199,7 +1191,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[18]";
-		INDEX = 145;
+		INDEX = 144;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1207,7 +1199,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[17]";
-		INDEX = 146;
+		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1215,7 +1207,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[16]";
-		INDEX = 147;
+		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1223,7 +1215,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[15]";
-		INDEX = 148;
+		INDEX = 147;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1231,7 +1223,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[14]";
-		INDEX = 149;
+		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1239,7 +1231,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[13]";
-		INDEX = 150;
+		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1247,7 +1239,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[12]";
-		INDEX = 151;
+		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1255,7 +1247,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[11]";
-		INDEX = 152;
+		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1263,7 +1255,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[10]";
-		INDEX = 153;
+		INDEX = 152;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1271,7 +1263,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[9]";
-		INDEX = 154;
+		INDEX = 153;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1279,7 +1271,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[8]";
-		INDEX = 155;
+		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1287,7 +1279,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[7]";
-		INDEX = 156;
+		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1295,7 +1287,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[6]";
-		INDEX = 157;
+		INDEX = 156;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1303,7 +1295,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[5]";
-		INDEX = 158;
+		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1311,7 +1303,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[4]";
-		INDEX = 159;
+		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1319,7 +1311,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[3]";
-		INDEX = 160;
+		INDEX = 159;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1327,7 +1319,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[2]";
-		INDEX = 161;
+		INDEX = 160;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1335,7 +1327,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[1]";
-		INDEX = 162;
+		INDEX = 161;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1343,7 +1335,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[0]";
-		INDEX = 163;
+		INDEX = 162;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
