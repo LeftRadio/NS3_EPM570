@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 248 336)
+	(rect 16 16 296 336)
 	(text "Synchronization" (rect 5 0 82 12)(font "Arial" ))
 	(text "inst" (rect 8 304 25 316)(font "Arial" ))
 	(port
@@ -136,20 +136,34 @@ applicable agreement for further details.
 		(line (pt 0 272)(pt 16 272)(line_width 1))
 	)
 	(port
-		(pt 232 32)
+		(pt 280 32)
 		(output)
 		(text "Write_Ready" (rect 0 0 64 12)(font "Arial" ))
-		(text "Write_Ready" (rect 147 27 211 39)(font "Arial" ))
-		(line (pt 232 32)(pt 216 32)(line_width 1))
+		(text "Write_Ready" (rect 195 27 259 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 1))
 	)
 	(port
-		(pt 232 48)
+		(pt 280 48)
 		(output)
 		(text "sync_state_out" (rect 0 0 76 12)(font "Arial" ))
-		(text "sync_state_out" (rect 135 43 211 55)(font "Arial" ))
-		(line (pt 232 48)(pt 216 48)(line_width 1))
+		(text "sync_state_out" (rect 183 43 259 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48)(line_width 1))
+	)
+	(port
+		(pt 280 64)
+		(output)
+		(text "SRAM_WR" (rect 0 0 55 12)(font "Arial" ))
+		(text "SRAM_WR" (rect 204 59 259 71)(font "Arial" ))
+		(line (pt 280 64)(pt 264 64)(line_width 1))
+	)
+	(port
+		(pt 280 80)
+		(output)
+		(text "ADDR_CNT_OUT[17..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "ADDR_CNT_OUT[17..0]" (rect 139 75 259 87)(font "Arial" ))
+		(line (pt 280 80)(pt 264 80)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 216 304)(line_width 1))
+		(rectangle (rect 16 16 264 304)(line_width 1))
 	)
 )

@@ -65,6 +65,13 @@ applicable agreement for further details.
 		(text "Write_Ready" (rect 123 27 187 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 1))
 	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "WINcnt[17..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "WINcnt[17..0]" (rect 118 43 187 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 192 112)(line_width 1))
 	)

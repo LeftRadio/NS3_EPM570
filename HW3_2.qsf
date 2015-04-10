@@ -178,6 +178,25 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IN_CLK
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SRAM_DATA
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Write_Ready
 set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id IN_CLK
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf"
+set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf"
+set_location_assignment PIN_131 -to ADC_CLK1
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK1
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 50%
+set_global_assignment -name ALWAYS_ENABLE_INPUT_BUFFERS ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE REALISTIC
+set_global_assignment -name EDA_RESYNTHESIS_TOOL "Synplify Premier"
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER OFF
+set_global_assignment -name SMART_RECOMPILE OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING "NORMAL COMPILATION"
 set_global_assignment -name AHDL_FILE lpm_mux8.tdf
 set_global_assignment -name AHDL_FILE lpm_or0.tdf
 set_global_assignment -name AHDL_FILE lpm_and1.tdf
@@ -188,8 +207,6 @@ set_global_assignment -name AHDL_FILE lpm_and0.tdf
 set_global_assignment -name AHDL_FILE lpm_mux2.tdf
 set_global_assignment -name AHDL_FILE lpm_dff_min.tdf
 set_global_assignment -name AHDL_FILE cntADDR.tdf
-set_global_assignment -name AHDL_FILE altufm_osc0_altufm_osc_lv5.tdf
-set_global_assignment -name AHDL_FILE altufm_osc0.tdf
 set_global_assignment -name VERILOG_FILE MIN_MAX.v
 set_global_assignment -name VERILOG_FILE Registers.v
 set_global_assignment -name VERILOG_FILE Synchronization.v
@@ -234,30 +251,14 @@ set_global_assignment -name QIP_FILE lpm_or1.qip
 set_global_assignment -name QIP_FILE lpm_xor1.qip
 set_global_assignment -name QIP_FILE lpm_mux8.qip
 set_global_assignment -name QIP_FILE lpm_ff0.qip
-set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
-set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
-set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf"
-set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf"
-set_location_assignment PIN_131 -to ADC_CLK1
-set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK1
-set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK
-set_instance_assignment -name CLOCK_SETTINGS IN_CLK -to ADC_CLK1
-set_instance_assignment -name CLOCK_SETTINGS IN_CLK -to ADC_CLK
-set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
-set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
-set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 50%
-set_global_assignment -name ALWAYS_ENABLE_INPUT_BUFFERS ON
-set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name QIP_FILE lpm_mux7.qip
 set_global_assignment -name QIP_FILE lpm_compare2.qip
 set_global_assignment -name QIP_FILE lpm_inv0.qip
 set_global_assignment -name QIP_FILE lpm_counter2.qip
 set_global_assignment -name QIP_FILE lpm_and2.qip
-set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
-set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE REALISTIC
 set_global_assignment -name QIP_FILE lpm_dff5.qip
-set_global_assignment -name EDA_RESYNTHESIS_TOOL "Synplify Premier"
-set_global_assignment -name FLOW_ENABLE_RTL_VIEWER OFF
-set_global_assignment -name SMART_RECOMPILE OFF
-set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
-set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ADC_CLK -section_id IN_CLK_GRP
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ADC_CLK1 -section_id IN_CLK_GRP
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER IN_CLK -section_id IN_CLK_GRP
+set_instance_assignment -name CUT ON -from * -to ADC_CLK1
+set_instance_assignment -name CUT ON -from * -to ADC_CLK

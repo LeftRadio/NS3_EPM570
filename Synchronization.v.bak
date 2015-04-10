@@ -14,7 +14,8 @@ input [17:0] WIN_DATA,
 input [7:0]  Delay,
 input Sync_channel_sel,
 input Sync_OUT_WIN, sync_ON,
-input Start_Write, CLK_EN,
+input Start_Write,
+input CLK_EN,
 input Enable_Trig,
 input LA_TRIGG_IN,
 input LA_OR_OSC_TRIGG,
@@ -23,8 +24,8 @@ input CLK,
    
 output Write_Ready,
 output sync_state_out,
-
-//output [17:0] WIN_DATA_OUT
+output reg SRAM_WR,
+output [17:0] ADDR_CNT_OUT
 );
 
 wire trigger_event;
@@ -33,6 +34,7 @@ wire Wr_Ready;
 
 assign Write_Ready = Start_Write & Wr_Ready;
 assign event_out = trigger_event & LA_RLE_CNT_EN;
+//assign SRAM_WR = ~(CLK_EN & LA_RLE_CNT_EN);
 
 trigger  trigger_1
          (
@@ -62,8 +64,16 @@ WIN_Counter  WIN_Counter_1
          .WIN_DATA(WIN_DATA),         
          .Start_Write(Start_Write),         
          .event_in(event_out),
-         .Write_Ready(Wr_Ready)                  
+         .Write_Ready(Wr_Ready),
+         .WINcnt(ADDR_CNT_OUT)
          );
+
+
+always @(posedge CLK) begin
+
+	SRAM_WR <= ~(CLK_EN & LA_RLE_CNT_EN);
+
+end;
 
 endmodule 
 

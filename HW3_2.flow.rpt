@@ -1,5 +1,5 @@
 Flow report for HW3_2
-Fri Apr 10 01:21:10 2015
+Fri Apr 10 14:05:17 2015
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Fri Apr 10 01:21:10 2015        ;
+; Flow Status             ; Successful - Fri Apr 10 14:05:17 2015        ;
 ; Quartus II Version      ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name           ; HW3_2                                        ;
 ; Top-level Entity Name   ; NS3                                          ;
 ; Family                  ; MAX II                                       ;
 ; Device                  ; EPM570T144C5                                 ;
 ; Timing Models           ; Final                                        ;
-; Met timing requirements ; Yes                                          ;
-; Total logic elements    ; 493 / 570 ( 86 % )                           ;
-; Total pins              ; 97 / 116 ( 84 % )                            ;
+; Met timing requirements ; No                                           ;
+; Total logic elements    ; 496 / 570 ( 87 % )                           ;
+; Total pins              ; 98 / 116 ( 84 % )                            ;
 ; Total virtual pins      ; 0                                            ;
 ; UFM blocks              ; 0 / 1 ( 0 % )                                ;
 +-------------------------+----------------------------------------------+
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2015 01:20:36 ;
+; Start date & time ; 04/10/2015 14:04:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HW3_2               ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 ; Assignment Name                                   ; Value                                                 ; Default Value                  ; Entity Name ; Section Id     ;
 +---------------------------------------------------+-------------------------------------------------------+--------------------------------+-------------+----------------+
 ; ALWAYS_ENABLE_INPUT_BUFFERS                       ; On                                                    ; Off                            ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                             ; 120901460567.142861803605476                          ; --                             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                             ; 120901460567.142866388404872                          ; --                             ; --          ; --             ;
 ; EDA_RESYNTHESIS_TOOL                              ; Synplify Premier                                      ; <None>                         ; --          ; --             ;
 ; ENABLE_LOGIC_ANALYZER_INTERFACE                   ; Off                                                   ; --                             ; --          ; --             ;
 ; FITTER_EFFORT                                     ; Standard Fit                                          ; Auto Fit                       ; --          ; --             ;
@@ -133,6 +133,8 @@ applicable agreement for further details.
 ; MISC_FILE                                         ; C:/altera/NS3/NS3.dpf                                 ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; C:/altera/NS3_out/NS3.dpf                             ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; C:/Projects/Altera/NS3_out/NS3.dpf                    ; --                             ; --          ; --             ;
+; MISC_FILE                                         ; C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf ; --                             ; --          ; --             ;
+; MISC_FILE                                         ; C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_bustri1.tdf                                       ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_bustri1.bsf                                       ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_bustri1.inc                                       ; --                             ; --          ; --             ;
@@ -193,8 +195,6 @@ applicable agreement for further details.
 ; MISC_FILE                                         ; lpm_ff0.tdf                                           ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_ff0.bsf                                           ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_ff0.inc                                           ; --                             ; --          ; --             ;
-; MISC_FILE                                         ; C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf ; --                             ; --          ; --             ;
-; MISC_FILE                                         ; C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_mux7.tdf                                          ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_mux7.bsf                                          ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_mux7.inc                                          ; --                             ; --          ; --             ;
@@ -214,7 +214,7 @@ applicable agreement for further details.
 ; MISC_FILE                                         ; lpm_dff5_bb.v                                         ; --                             ; --          ; --             ;
 ; MISC_FILE                                         ; lpm_dff5.inc                                          ; --                             ; --          ; --             ;
 ; OPTIMIZE_HOLD_TIMING                              ; All Paths                                             ; IO Paths and Minimum TPD Paths ; --          ; --             ;
-; OPTIMIZE_POWER_DURING_FITTING                     ; Off                                                   ; Normal compilation             ; --          ; --             ;
+; OPTIMIZE_MULTI_CORNER_TIMING                      ; On                                                    ; Off                            ; --          ; --             ;
 ; OPTIMIZE_POWER_DURING_SYNTHESIS                   ; Off                                                   ; Normal compilation             ; --          ; --             ;
 ; PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ; On                                                    ; Off                            ; --          ; --             ;
 ; PHYSICAL_SYNTHESIS_EFFORT                         ; Extra                                                 ; Normal                         ; --          ; --             ;
@@ -234,12 +234,12 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 209 MB              ; 00:00:12                           ;
-; Fitter                  ; 00:00:09     ; 1.0                     ; 180 MB              ; 00:00:09                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 166 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 137 MB              ; 00:00:05                           ;
-; EDA Netlist Writer      ; 00:00:03     ; 1.0                     ; 147 MB              ; 00:00:03                           ;
-; Total                   ; 00:00:30     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis    ; 00:00:11     ; 1.0                     ; 208 MB              ; 00:00:11                           ;
+; Fitter                  ; 00:00:10     ; 1.0                     ; 180 MB              ; 00:00:10                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 166 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:05     ; 1.0                     ; 137 MB              ; 00:00:05                           ;
+; EDA Netlist Writer      ; 00:00:02     ; 1.0                     ; 147 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:30     ; --                      ; --                  ; 00:00:29                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

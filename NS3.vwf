@@ -1164,26 +1164,6 @@ SIGNAL("inst50")
 	PARENT = "";
 }
 
-SIGNAL("I_CLK_EN")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("I_CNT_EN")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 SIGNAL("I_EN")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1194,7 +1174,7 @@ SIGNAL("I_EN")
 	PARENT = "";
 }
 
-SIGNAL("EV_STATE")
+SIGNAL("SYNC_SRAM_WR")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1202,6 +1182,536 @@ SIGNAL("EV_STATE")
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
+}
+
+SIGNAL("I_EN_O")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("EN0")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("EN1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Registers:inst|Decimation")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 24;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("Registers:inst|Decimation[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Registers:inst|Decimation[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Registers:inst|Decimation";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 24;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
+}
+
+SIGNAL("Decimation_counter:inst13|Deicimation_reg[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Decimation_counter:inst13|Deicimation_reg";
 }
 
 TRANSITION_LIST("ADC_DATA_A[0]")
@@ -1764,9 +2274,7 @@ TRANSITION_LIST("MCU_DATA[5]")
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 290.0;
-		LEVEL 1 FOR 60.024;
-		LEVEL 0 FOR 8669.976;
+		LEVEL 0 FOR 9020.0;
 	}
 }
 
@@ -1788,7 +2296,9 @@ TRANSITION_LIST("MCU_DATA[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 480.0;
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 380.0;
 		LEVEL 1 FOR 90.0;
@@ -1807,7 +2317,9 @@ TRANSITION_LIST("MCU_DATA[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 620.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 340.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 40.0;
@@ -1830,9 +2342,7 @@ TRANSITION_LIST("MCU_DATA[1]")
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 380.0;
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 8520.0;
 	}
@@ -1843,16 +2353,16 @@ TRANSITION_LIST("MCU_DATA[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 270.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 70.0;
 		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 130.0;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 210.0;
+		LEVEL 0 FOR 410.0;
+		LEVEL 1 FOR 150.0;
 		LEVEL 0 FOR 180.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 90.0;
@@ -1989,9 +2499,9 @@ TRANSITION_LIST("WR")
 		REPEAT = 1;
 		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 50.0;
@@ -2548,24 +3058,6 @@ TRANSITION_LIST("inst50")
 	}
 }
 
-TRANSITION_LIST("I_CLK_EN")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10000.0;
-	}
-}
-
-TRANSITION_LIST("I_CNT_EN")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10000.0;
-	}
-}
-
 TRANSITION_LIST("I_EN")
 {
 	NODE
@@ -2575,12 +3067,471 @@ TRANSITION_LIST("I_EN")
 	}
 }
 
-TRANSITION_LIST("EV_STATE")
+TRANSITION_LIST("SYNC_SRAM_WR")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("I_EN_O")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("EN0")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("EN1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Registers:inst|Decimation[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("Decimation_counter:inst13|Deicimation_reg[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 10000.0;
 	}
 }
 
@@ -3701,7 +4652,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I_CLK_EN";
+	CHANNEL = "I_EN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 113;
@@ -3710,7 +4661,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I_CNT_EN";
+	CHANNEL = "SYNC_SRAM_WR";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 114;
@@ -3719,7 +4670,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "I_EN";
+	CHANNEL = "I_EN_O";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 115;
@@ -3728,11 +4679,520 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "EV_STATE";
+	CHANNEL = "EN0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 116;
 	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "EN1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 117;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 118;
+	TREE_LEVEL = 0;
+	CHILDREN = 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 119;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 120;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 121;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 122;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 123;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 124;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 125;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 126;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 127;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 128;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 129;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 130;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 131;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 132;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 133;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 134;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 135;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 136;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 137;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 138;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 139;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 140;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 141;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Registers:inst|Decimation[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 142;
+	TREE_LEVEL = 1;
+	PARENT = 118;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 143;
+	TREE_LEVEL = 0;
+	CHILDREN = 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 144;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 145;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 146;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 147;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 148;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 149;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 150;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 151;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 152;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 153;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 154;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 155;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 156;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 157;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 158;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 159;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 160;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 161;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 162;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 163;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 164;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 165;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 166;
+	TREE_LEVEL = 1;
+	PARENT = 143;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Decimation_counter:inst13|Deicimation_reg[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 167;
+	TREE_LEVEL = 1;
+	PARENT = 143;
 }
 
 TIME_BAR
