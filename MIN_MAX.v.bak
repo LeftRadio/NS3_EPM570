@@ -1,66 +1,85 @@
 module MIN_MAX
 (
 
-input [7:0]    A_DATA_IN,
-input [7:0]    LA_DATA_IN,
-input          LA_SOURSE,
-input          MAX_MIN,
-input          EN,
-input          CLK,
-input          CLR,
+input [7:0]			ADC_DATA_IN_A,
+input [7:0]			ADC_DATA_IN_B,
+input [7:0]			LA_DATA_IN_A,
+input [7:0]			LA_DATA_IN_B,
 
-output reg [7:0] SYNC_OUT_DATA,
-output reg [7:0] SRAM_OUT_DATA
+input				A_B_SOURSE,
+input          		LA_SOURSE,
+input       		MIN_MAX_LOAD,
+input          		CLK,
+
+output reg [7:0] 	SYNC_OUT_DATA,
+output reg [7:0] 	SRAM_OUT_DATA_A,
+output reg [7:0] 	SRAM_OUT_DATA_B
 
 );
 
-reg [7:0] MAX_DATA_IN;
-reg [7:0] MIN_DATA_IN;
+/* Input multiplexor */
+wire [7:0] M_IN_DATA_A = (LA_SOURSE == 0)? ADC_DATA_IN_A : LA_DATA_IN_A;
+wire [7:0] M_IN_DATA_B = (LA_SOURSE == 0)? ADC_DATA_IN_B : LA_DATA_IN_B;
+wire [7:0] ADC_SYNC_DATA = (A_B_SOURSE == 0)? IN_DATA_A : IN_DATA_B;
 
-reg [7:0] MAX_DATA_OUT;
-//reg [7:0] MIN_DATA_OUT;
+/* Signal for load MIN/MAX register */
+wire min_max_load = LA_SOURSE | MIN_MAX_LOAD;
 
-wire [7:0] IN_DATA = (LA_SOURSE == 0)? A_DATA_IN : LA_DATA_IN;
-wire MIN_MAX_LOAD = LA_SOURSE | EN;
+/* CH A registers */
+reg [7:0] IN_DATA_A;
+reg [7:0] MAX_DATA_IN_A;
+reg [7:0] MIN_DATA_IN_A;
+reg [7:0] SRAM_TMP_OUT_A;
 	
+reg [7:0] IN_DATA_B;
+reg [7:0] MAX_DATA_IN_B;
+reg [7:0] MIN_DATA_IN_B;
+reg [7:0] SRAM_TMP_OUT_B;
 
+
+
+/* */
 always @(posedge CLK) begin
 
-	if(CLR == 0) begin		
-		MAX_DATA_IN <= 0;
-		MIN_DATA_IN <= 0;
-		MAX_DATA_OUT <= 0;  
-		//MIN_DATA_OUT <= 0;
-		SRAM_OUT_DATA <= 0;
-		SYNC_OUT_DATA <= 0;     
+	/* Load input data to temp storage registers */
+	IN_DATA_A <= M_IN_DATA_A;
+	IN_DATA_B <= M_IN_DATA_B;
+	
+	if(min_max_load == 1) begin	
+						
+		MIN_DATA_IN_A <= IN_DATA_A;
+		MAX_DATA_IN_A <= IN_DATA_A;	
+		MIN_DATA_IN_B <= IN_DATA_B;
+		MAX_DATA_IN_B <= IN_DATA_B;	
+		
+		/* load MIN to tmp out buff register */
+		SRAM_TMP_OUT_A <= MIN_DATA_IN_A;
+		SRAM_TMP_OUT_B <= MIN_DATA_IN_B;
+				   
 	end
 	else begin
-			
-		SYNC_OUT_DATA <= IN_DATA;
+					
+		/* MIN data */
+		if(IN_DATA_A <= MIN_DATA_IN_A) MIN_DATA_IN_A <= IN_DATA_A;
+		if(IN_DATA_B <= MIN_DATA_IN_B) MIN_DATA_IN_B <= IN_DATA_B;
 		
-		/* maximum for in data */
-		if((SYNC_OUT_DATA >= MAX_DATA_IN) | MIN_MAX_LOAD) begin
-				MAX_DATA_IN <= SYNC_OUT_DATA;
-		end;
+		/* MAX data */
+		if(IN_DATA_A >= MAX_DATA_IN_A) MAX_DATA_IN_A <= IN_DATA_A;
+		if(IN_DATA_B >= MAX_DATA_IN_B) MAX_DATA_IN_B <= IN_DATA_B;
 		
-		/* minimum for in data */
-		if((SYNC_OUT_DATA <= MIN_DATA_IN) | MIN_MAX_LOAD) begin
-				MIN_DATA_IN <= SYNC_OUT_DATA;
-		end;
-			
-				
-		if(MAX_MIN == 0) begin
-			MAX_DATA_OUT <= MAX_DATA_IN;	
-		end
-		else begin
-			MAX_DATA_OUT <= MIN_DATA_IN;			
-		end;
+		/* load MAX to tmp out buff register */
+		SRAM_TMP_OUT_A <= MAX_DATA_IN_A;
+		SRAM_TMP_OUT_B <= MAX_DATA_IN_B;
 		
+	end	
+	
 		
-		SRAM_OUT_DATA <= MAX_DATA_OUT;
-			
-	end
-		
+	/* Load data to out registers */
+	SRAM_OUT_DATA_A <= SRAM_TMP_OUT_A;
+	SRAM_OUT_DATA_B <= SRAM_TMP_OUT_B;	
+	
+	SYNC_OUT_DATA <= ADC_SYNC_DATA;
+	
 end  //always
 
 endmodule

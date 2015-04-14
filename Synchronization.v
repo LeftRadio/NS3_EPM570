@@ -1,80 +1,97 @@
 
 `include "trigger.v"
-`include "WIN_Counter.v"   
-   
-   
-module Synchronization
-(
 
-input [7:0] Trg_Lv_UP,
-input [7:0] Trg_Lv_DOWN,
-input [7:0] DATA_IN_A,
-input [7:0] DATA_IN_B,
-input [17:0] WIN_DATA,
-input [7:0]  Delay,
-input Sync_channel_sel,
-input Sync_OUT_WIN, sync_ON,
-input Start_Write,
-input CLK_EN,
-input Enable_Trig,
-input LA_TRIGG_IN,
-input LA_OR_OSC_TRIGG,
-input LA_RLE_CNT_EN,
-input CLK,
+
+module Synchronization
+(	
+	input [7:0] SYNC_DATA_IN,
+	input [7:0] Delay,
+	input [7:0] Trg_Lv_UP,
+	input [7:0] Trg_Lv_DOWN,
+	input [7:0] LA_MASK_CND,
+	input [7:0] LA_MASK_DIFF,
+	
+	input ADC_LA_SYNC_SOURSE,
+	input ADC_SYNC_OUT_WIN,
+	input [1:0] LA_SYNC_MODE,
+
+	input SYNC_GLOBAL_ON,
+	input Start_Write,	
+	input ENABLE_TRIGG,
+	input CLK_EN,
+	input EN,
+	input CLK,
    
-output reg Write_Ready,
-output sync_state_out,
-output reg SRAM_WR,
-output [17:0] ADDR_CNT_OUT
+	output reg WinCnt_EN,
+	output SRAM_WR
 );
 
-wire trigger_event;
-wire event_out;
-wire Wr_Ready;
 
-//assign Write_Ready = Start_Write & Wr_Ready;
-assign event_out = trigger_event & LA_RLE_CNT_EN;
-//assign SRAM_WR = ~(CLK_EN & LA_RLE_CNT_EN);
+wire ADC_trigger_event;
+wire LA_trigger_event;
 
-trigger  trigger_1
-         (
-         .CLK(CLK),
-         .CLK_EN(CLK_EN),
-         .Trg_Lv_UP(Trg_Lv_UP),
-         .Trg_Lv_DOWN(Trg_Lv_DOWN),
-         .DATA_IN_A(DATA_IN_A),
-         .DATA_IN_B(DATA_IN_B),
-         .Delay(Delay),
-         .sync_sourse(Sync_channel_sel),         
-         .Start_Write(Start_Write),
-         .Enable_Trig(Enable_Trig),
-         .Sync_OUT_WIN(Sync_OUT_WIN),
-         .sync_ON(sync_ON),         
-         .LA_TRIGG_IN(LA_TRIGG_IN),
-         .Analog_or_LA(LA_OR_OSC_TRIGG),
-         .trig_out(trigger_event),
-         .sync_state_out(sync_state_out)
-         );
-          
+assign SRAM_WR = ~WinCnt_EN;
 
-WIN_Counter  WIN_Counter_1
-         (         
-         .CLK(CLK),
-         .CLK_EN(CLK_EN),
-         .WIN_DATA(WIN_DATA),         
-         .Start_Write(Start_Write),         
-         .event_in(event_out),
-         .Write_Ready(Wr_Ready),
-         .WINcnt(ADDR_CNT_OUT)
-         );
+/* sync sourse registers */
+reg sync_gl_on_adc;
+reg sync_gl_on_la;
 
 
 always @(posedge CLK) begin
-
-	SRAM_WR <= ~(CLK_EN & LA_RLE_CNT_EN);
-	//Write_Ready <= (Start_Write & Wr_Ready);
-	Write_Ready <= Wr_Ready;
+	
+	WinCnt_EN <= ( (EN | CLK_EN) & (ADC_trigger_event & LA_trigger_event) );
+	
+	if(ADC_LA_SYNC_SOURSE == 0) begin
+		
+		sync_gl_on_adc <= 1'b1;
+		sync_gl_on_la <= 1'b0;
+		
+	end
+	else begin
+		
+		sync_gl_on_adc <= 1'b0;
+		sync_gl_on_la <= 1'b1;
+		
+	end
+	
 end
+
+
+
+trigger  trigger_1
+(
+	.CLK(CLK),
+	.CLK_EN(CLK_EN),
+	.Trg_Lv_UP(Trg_Lv_UP),
+	.Trg_Lv_DOWN(Trg_Lv_DOWN),
+	.TRIG_DATA_IN(SYNC_DATA_IN),         
+	.Delay(Delay),             
+	.Start_Write(Start_Write),
+	
+	.Sync_OUT_WIN(ADC_SYNC_OUT_WIN),
+	.sync_ON(sync_gl_on_adc),
+	.Enable_Trig(ENABLE_TRIGG),
+	       
+	.trig_out(ADC_trigger_event)
+);
+          
+
+LA_TRIG LA_TRIG_1
+(
+	.DATA_IN(SYNC_DATA_IN),
+	.Trg_Lv_UP(Trg_Lv_UP),
+	.Trg_Lv_DOWN(Trg_Lv_DOWN),
+	.LA_MASK_CND(LA_MASK_CND),
+	.LA_MASK_DIFF(LA_MASK_DIFF),	//
+	
+	.SYNC_MODE(LA_SYNC_MODE),		//	
+	.RST(sync_gl_on_la),  
+	.ENABLE(ENABLE_TRIGG),			// 
+	.CLK(CLK),
+    
+	.trig_out(LA_trigger_event)		//
+);       
+
 
 endmodule 
 

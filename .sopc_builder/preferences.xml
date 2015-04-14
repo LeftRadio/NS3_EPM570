@@ -15,6 +15,5 @@
   </columns>
  </clocktable>
  <window width="1234" height="816" x="-8" y="-8" />
- <library
-   expandedCategories="Library/Peripherals/Debug and Performance,Project,Library/Peripherals,Library/Interface Protocols/Serial,Library/Memories and Memory Controllers,Library,Library/Interface Protocols,Library/Memories and Memory Controllers/On-Chip,Library/Bridges and Adapters" />
+ <library expandedCategories="Library,Project" />
 </preferences>

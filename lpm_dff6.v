@@ -42,11 +42,11 @@ module lpm_dff6 (
 	q);
 
 	input	  clock;
-	input	[8:0]  data;
-	output	[8:0]  q;
+	input	[7:0]  data;
+	output	[7:0]  q;
 
-	wire [8:0] sub_wire0;
-	wire [8:0] q = sub_wire0[8:0];
+	wire [7:0] sub_wire0;
+	wire [7:0] q = sub_wire0[7:0];
 
 	lpm_ff	lpm_ff_component (
 				.clock (clock),
@@ -66,7 +66,7 @@ module lpm_dff6 (
 	defparam
 		lpm_ff_component.lpm_fftype = "DFF",
 		lpm_ff_component.lpm_type = "LPM_FF",
-		lpm_ff_component.lpm_width = 9;
+		lpm_ff_component.lpm_width = 8;
 
 
 endmodule
@@ -87,16 +87,16 @@ endmodule
 // Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 // Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "9"
+// Retrieval info: PRIVATE: nBit NUMERIC "8"
 // Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "9"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
-// Retrieval info: USED_PORT: data 0 0 9 0 INPUT NODEFVAL data[8..0]
-// Retrieval info: USED_PORT: q 0 0 9 0 OUTPUT NODEFVAL q[8..0]
+// Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 9 0 @q 0 0 9 0
-// Retrieval info: CONNECT: @data 0 0 9 0 data 0 0 9 0
+// Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
+// Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff6.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff6.inc TRUE

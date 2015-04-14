@@ -19,8 +19,8 @@ always @(posedge CLK) begin
 	str_wr <= Start_WR;
 	
 	if(str_wr == 0) begin
-		EN <=0;
-		//Deicimation_reg <= Deicimation_IN;
+		EN <=0;		
+		
 	end
 	else begin
    
@@ -32,10 +32,10 @@ always @(posedge CLK) begin
 			Deicimation_reg <= Deicimation_reg - 1'b1;
 			EN <= 0;
 		end
-   
-		CLK_EN <= EN;   
+		
    end
    
+   CLK_EN <= EN;
    
 end	// always
 

@@ -23,11 +23,11 @@ applicable agreement for further details.
 VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 1442915;
-		ZEND = 1614947;
-		NUMERATOR = 1011;
-		DENOMINATOR = 172032;
-		TOP_INDEX = 0;
+		ZBEGIN = 2515882;
+		ZEND = 2784810;
+		NUMERATOR = 817;
+		DENOMINATOR = 268928;
+		TOP_INDEX = 65;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -70,7 +70,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A";
+		SIGNAL = "LA_DATA_IN";
 		INDEX = 4;
 		FORMAT = T;
 		SCALE = 1;
@@ -78,7 +78,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[7]";
+		SIGNAL = "LA_DATA_IN[7]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -86,7 +86,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[6]";
+		SIGNAL = "LA_DATA_IN[6]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -94,7 +94,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[5]";
+		SIGNAL = "LA_DATA_IN[5]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -102,7 +102,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[4]";
+		SIGNAL = "LA_DATA_IN[4]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -110,7 +110,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[3]";
+		SIGNAL = "LA_DATA_IN[3]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -118,7 +118,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[2]";
+		SIGNAL = "LA_DATA_IN[2]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -126,7 +126,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[1]";
+		SIGNAL = "LA_DATA_IN[1]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -134,7 +134,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_A[0]";
+		SIGNAL = "LA_DATA_IN[0]";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -142,7 +142,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B";
+		SIGNAL = "ADC_DATA_A";
 		INDEX = 13;
 		FORMAT = T;
 		SCALE = 1;
@@ -150,7 +150,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[7]";
+		SIGNAL = "ADC_DATA_A[7]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -158,7 +158,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[6]";
+		SIGNAL = "ADC_DATA_A[6]";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -166,7 +166,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[5]";
+		SIGNAL = "ADC_DATA_A[5]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -174,7 +174,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[4]";
+		SIGNAL = "ADC_DATA_A[4]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -182,7 +182,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[3]";
+		SIGNAL = "ADC_DATA_A[3]";
 		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
@@ -190,7 +190,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[2]";
+		SIGNAL = "ADC_DATA_A[2]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -198,7 +198,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[1]";
+		SIGNAL = "ADC_DATA_A[1]";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -206,7 +206,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADC_DATA_B[0]";
+		SIGNAL = "ADC_DATA_A[0]";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -214,7 +214,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA";
+		SIGNAL = "ADC_DATA_B";
 		INDEX = 22;
 		FORMAT = T;
 		SCALE = 1;
@@ -222,7 +222,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[15]";
+		SIGNAL = "ADC_DATA_B[7]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -230,7 +230,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[14]";
+		SIGNAL = "ADC_DATA_B[6]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -238,7 +238,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[13]";
+		SIGNAL = "ADC_DATA_B[5]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -246,7 +246,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[12]";
+		SIGNAL = "ADC_DATA_B[4]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -254,7 +254,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[11]";
+		SIGNAL = "ADC_DATA_B[3]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -262,7 +262,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[10]";
+		SIGNAL = "ADC_DATA_B[2]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -270,7 +270,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[9]";
+		SIGNAL = "ADC_DATA_B[1]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -278,7 +278,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[8]";
+		SIGNAL = "ADC_DATA_B[0]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -286,15 +286,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[7]";
+		SIGNAL = "SRAM_DATA";
 		INDEX = 31;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[6]";
+		SIGNAL = "SRAM_DATA[15]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -302,7 +302,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[5]";
+		SIGNAL = "SRAM_DATA[14]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -310,7 +310,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[4]";
+		SIGNAL = "SRAM_DATA[13]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -318,7 +318,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[3]";
+		SIGNAL = "SRAM_DATA[12]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -326,7 +326,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[2]";
+		SIGNAL = "SRAM_DATA[11]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -334,7 +334,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[1]";
+		SIGNAL = "SRAM_DATA[10]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -342,7 +342,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[0]";
+		SIGNAL = "SRAM_DATA[9]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -350,15 +350,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA~result";
+		SIGNAL = "SRAM_DATA[8]";
 		INDEX = 39;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[15]~result";
+		SIGNAL = "SRAM_DATA[7]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -366,7 +366,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[14]~result";
+		SIGNAL = "SRAM_DATA[6]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -374,7 +374,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[13]~result";
+		SIGNAL = "SRAM_DATA[5]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -382,7 +382,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[12]~result";
+		SIGNAL = "SRAM_DATA[4]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -390,7 +390,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[11]~result";
+		SIGNAL = "SRAM_DATA[3]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -398,7 +398,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[10]~result";
+		SIGNAL = "SRAM_DATA[2]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -406,7 +406,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[9]~result";
+		SIGNAL = "SRAM_DATA[1]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -414,7 +414,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[8]~result";
+		SIGNAL = "SRAM_DATA[0]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -422,15 +422,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[7]~result";
+		SIGNAL = "SRAM_DATA~result";
 		INDEX = 48;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[6]~result";
+		SIGNAL = "SRAM_DATA[15]~result";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -438,7 +438,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[5]~result";
+		SIGNAL = "SRAM_DATA[14]~result";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -446,7 +446,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[4]~result";
+		SIGNAL = "SRAM_DATA[13]~result";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -454,7 +454,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[3]~result";
+		SIGNAL = "SRAM_DATA[12]~result";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -462,7 +462,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[2]~result";
+		SIGNAL = "SRAM_DATA[11]~result";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -470,7 +470,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[1]~result";
+		SIGNAL = "SRAM_DATA[10]~result";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -478,7 +478,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_DATA[0]~result";
+		SIGNAL = "SRAM_DATA[9]~result";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -486,15 +486,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES";
+		SIGNAL = "SRAM_DATA[8]~result";
 		INDEX = 56;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[17]";
+		SIGNAL = "SRAM_DATA[7]~result";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -502,7 +502,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[16]";
+		SIGNAL = "SRAM_DATA[6]~result";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -510,7 +510,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[15]";
+		SIGNAL = "SRAM_DATA[5]~result";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -518,7 +518,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[14]";
+		SIGNAL = "SRAM_DATA[4]~result";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -526,7 +526,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[13]";
+		SIGNAL = "SRAM_DATA[3]~result";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -534,7 +534,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[12]";
+		SIGNAL = "SRAM_DATA[2]~result";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -542,7 +542,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[11]";
+		SIGNAL = "SRAM_DATA[1]~result";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -550,7 +550,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[10]";
+		SIGNAL = "SRAM_DATA[0]~result";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -558,15 +558,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[9]";
+		SIGNAL = "SRAM_ADRES";
 		INDEX = 65;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[8]";
+		SIGNAL = "SRAM_ADRES[17]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -574,7 +574,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[7]";
+		SIGNAL = "SRAM_ADRES[16]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -582,7 +582,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[6]";
+		SIGNAL = "SRAM_ADRES[15]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -590,7 +590,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[5]";
+		SIGNAL = "SRAM_ADRES[14]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -598,7 +598,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[4]";
+		SIGNAL = "SRAM_ADRES[13]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -606,7 +606,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[3]";
+		SIGNAL = "SRAM_ADRES[12]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -614,7 +614,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[2]";
+		SIGNAL = "SRAM_ADRES[11]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -622,7 +622,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[1]";
+		SIGNAL = "SRAM_ADRES[10]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -630,7 +630,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_ADRES[0]";
+		SIGNAL = "SRAM_ADRES[9]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -638,7 +638,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_WE";
+		SIGNAL = "SRAM_ADRES[8]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -646,7 +646,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_OE";
+		SIGNAL = "SRAM_ADRES[7]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -654,7 +654,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SRAM_CE";
+		SIGNAL = "SRAM_ADRES[6]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -662,7 +662,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Write_Ready";
+		SIGNAL = "SRAM_ADRES[5]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -670,15 +670,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA";
+		SIGNAL = "SRAM_ADRES[4]";
 		INDEX = 79;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[7]";
+		SIGNAL = "SRAM_ADRES[3]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -686,7 +686,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[6]";
+		SIGNAL = "SRAM_ADRES[2]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -694,7 +694,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[5]";
+		SIGNAL = "SRAM_ADRES[1]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -702,7 +702,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[4]";
+		SIGNAL = "SRAM_ADRES[0]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -710,7 +710,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[3]";
+		SIGNAL = "SRAM_WE";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -718,7 +718,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[2]";
+		SIGNAL = "SRAM_OE";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -726,7 +726,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[1]";
+		SIGNAL = "SRAM_CE";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -734,7 +734,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[0]";
+		SIGNAL = "Write_Ready";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -742,7 +742,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA~result";
+		SIGNAL = "MCU_DATA";
 		INDEX = 88;
 		FORMAT = T;
 		SCALE = 1;
@@ -750,7 +750,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[7]~result";
+		SIGNAL = "MCU_DATA[7]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -758,7 +758,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[6]~result";
+		SIGNAL = "MCU_DATA[6]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -766,7 +766,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[5]~result";
+		SIGNAL = "MCU_DATA[5]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -774,7 +774,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[4]~result";
+		SIGNAL = "MCU_DATA[4]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -782,7 +782,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[3]~result";
+		SIGNAL = "MCU_DATA[3]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -790,7 +790,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[2]~result";
+		SIGNAL = "MCU_DATA[2]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -798,7 +798,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[1]~result";
+		SIGNAL = "MCU_DATA[1]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -806,7 +806,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "MCU_DATA[0]~result";
+		SIGNAL = "MCU_DATA[0]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -814,15 +814,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "WR";
+		SIGNAL = "MCU_DATA~result";
 		INDEX = 97;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RD";
+		SIGNAL = "MCU_DATA[7]~result";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -830,7 +830,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RS";
+		SIGNAL = "MCU_DATA[6]~result";
 		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
@@ -838,15 +838,15 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN";
+		SIGNAL = "MCU_DATA[5]~result";
 		INDEX = 100;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[7]";
+		SIGNAL = "MCU_DATA[4]~result";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -854,7 +854,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[6]";
+		SIGNAL = "MCU_DATA[3]~result";
 		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
@@ -862,7 +862,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[5]";
+		SIGNAL = "MCU_DATA[2]~result";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -870,7 +870,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[4]";
+		SIGNAL = "MCU_DATA[1]~result";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -878,7 +878,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[3]";
+		SIGNAL = "MCU_DATA[0]~result";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -886,7 +886,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[2]";
+		SIGNAL = "WR";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -894,7 +894,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[1]";
+		SIGNAL = "RD";
 		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
@@ -902,7 +902,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "LA_DATA_IN[0]";
+		SIGNAL = "RS";
 		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
@@ -918,32 +918,8 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "I_EN";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "EN0";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "EN1";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "Registers:inst|Decimation";
-		INDEX = 113;
+		INDEX = 110;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -951,7 +927,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[23]";
-		INDEX = 114;
+		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -959,7 +935,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[22]";
-		INDEX = 115;
+		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -967,7 +943,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[21]";
-		INDEX = 116;
+		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -975,7 +951,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[20]";
-		INDEX = 117;
+		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -983,7 +959,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[19]";
-		INDEX = 118;
+		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -991,7 +967,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[18]";
-		INDEX = 119;
+		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -999,7 +975,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[17]";
-		INDEX = 120;
+		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1007,7 +983,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[16]";
-		INDEX = 121;
+		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1015,7 +991,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[15]";
-		INDEX = 122;
+		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1023,7 +999,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[14]";
-		INDEX = 123;
+		INDEX = 120;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1031,7 +1007,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[13]";
-		INDEX = 124;
+		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1039,7 +1015,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[12]";
-		INDEX = 125;
+		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1047,7 +1023,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[11]";
-		INDEX = 126;
+		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1055,7 +1031,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[10]";
-		INDEX = 127;
+		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1063,7 +1039,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[9]";
-		INDEX = 128;
+		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1071,7 +1047,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[8]";
-		INDEX = 129;
+		INDEX = 126;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1079,7 +1055,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[7]";
-		INDEX = 130;
+		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1087,7 +1063,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[6]";
-		INDEX = 131;
+		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1095,7 +1071,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[5]";
-		INDEX = 132;
+		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1103,7 +1079,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[4]";
-		INDEX = 133;
+		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1111,7 +1087,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[3]";
-		INDEX = 134;
+		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1119,7 +1095,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[2]";
-		INDEX = 135;
+		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1127,7 +1103,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[1]";
-		INDEX = 136;
+		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1135,7 +1111,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Registers:inst|Decimation[0]";
-		INDEX = 137;
+		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1143,7 +1119,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg";
-		INDEX = 138;
+		INDEX = 135;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1151,7 +1127,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[23]";
-		INDEX = 139;
+		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1159,7 +1135,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[22]";
-		INDEX = 140;
+		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1167,7 +1143,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[21]";
-		INDEX = 141;
+		INDEX = 138;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1175,7 +1151,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[20]";
-		INDEX = 142;
+		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1183,7 +1159,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[19]";
-		INDEX = 143;
+		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1191,7 +1167,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[18]";
-		INDEX = 144;
+		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1199,7 +1175,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[17]";
-		INDEX = 145;
+		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1207,7 +1183,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[16]";
-		INDEX = 146;
+		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1215,7 +1191,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[15]";
-		INDEX = 147;
+		INDEX = 144;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1223,7 +1199,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[14]";
-		INDEX = 148;
+		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1231,7 +1207,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[13]";
-		INDEX = 149;
+		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1239,7 +1215,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[12]";
-		INDEX = 150;
+		INDEX = 147;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1247,7 +1223,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[11]";
-		INDEX = 151;
+		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1255,7 +1231,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[10]";
-		INDEX = 152;
+		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1263,7 +1239,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[9]";
-		INDEX = 153;
+		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1271,7 +1247,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[8]";
-		INDEX = 154;
+		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1279,7 +1255,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[7]";
-		INDEX = 155;
+		INDEX = 152;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1287,7 +1263,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[6]";
-		INDEX = 156;
+		INDEX = 153;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1295,7 +1271,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[5]";
-		INDEX = 157;
+		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1303,7 +1279,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[4]";
-		INDEX = 158;
+		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1311,7 +1287,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[3]";
-		INDEX = 159;
+		INDEX = 156;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1319,7 +1295,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[2]";
-		INDEX = 160;
+		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1327,7 +1303,7 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[1]";
-		INDEX = 161;
+		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1335,6 +1311,30 @@ VECTOR("C:/Projects/Altera/NS3_HWrev3_2/db/HW3_2.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Decimation_counter:inst13|Deicimation_reg[0]";
+		INDEX = 159;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RLE_CNT_E";
+		INDEX = 160;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "WIN_CNT_E";
+		INDEX = 161;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "CLK_EN_G";
 		INDEX = 162;
 		FORMAT = E;
 		SCALE = 1;

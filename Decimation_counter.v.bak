@@ -20,7 +20,7 @@ always @(posedge CLK) begin
 	
 	if(str_wr == 0) begin
 		EN <=0;
-		Deicimation_reg <= Deicimation_IN;
+		//Deicimation_reg <= Deicimation_IN;
 	end
 	else begin
    

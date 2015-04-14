@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.832 ns
-From           : ADC_DATA_A[1]
-To             : MIN_MAX:inst80|SYNC_OUT_DATA[1]
+Actual Time    : 4.232 ns
+From           : ADC_DATA_A[7]
+To             : MIN_MAX_RLE:inst65|MIN_MAX:MIN_MAX_1|IN_DATA_A[7]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.258 ns
-From           : Registers:inst|Start_Write_s
-To             : SRAM_CE
+Actual Time    : 12.231 ns
+From           : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[12]
+To             : SRAM_ADRES[12]
 From Clock     : IN_CLK
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 19.708 ns
-From           : SRAM_DATA[12]
-To             : MCU_DATA[4]
+Actual Time    : 18.731 ns
+From           : RS
+To             : MCU_DATA[0]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,49 +35,69 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.003 ns
-From           : LA_DATA_IN[4]
-To             : lpm_dff4:inst24|lpm_ff:lpm_ff_component|dffs[4]
+Actual Time    : -0.774 ns
+From           : LA_DATA_IN[5]
+To             : MIN_MAX_RLE:inst65|la_data[5]
 From Clock     : --
 To Clock       : IN_CLK
 Failed Paths   : 0
 
 Type           : Clock Setup: 'IN_CLK'
-Slack          : 1.175 ns
+Slack          : 1.167 ns
 Required Time  : 85.01 MHz ( period = 11.764 ns )
-Actual Time    : 94.44 MHz ( period = 10.589 ns )
-From           : Synchronization:inst74|trigger:trigger_1|DATA_SYNC[1]
-To             : Synchronization:inst74|trigger:trigger_1|SlCounter[1]
+Actual Time    : 94.37 MHz ( period = 10.597 ns )
+From           : WIN_Counter:inst68|WINcnt[9]
+To             : WIN_Counter:inst68|WINcnt[9]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'RS'
+Slack          : 93.457 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : 152.84 MHz ( period = 6.543 ns )
+From           : Read_counter:inst2|lpm_counter:lpm_counter_component|cntr_lkh:auto_generated|safe_q[0]
+To             : Read_counter:inst2|lpm_counter:lpm_counter_component|cntr_lkh:auto_generated|safe_q[9]
+From Clock     : RS
+To Clock       : RS
 Failed Paths   : 0
 
 Type           : Clock Hold: 'IN_CLK'
-Slack          : 1.375 ns
+Slack          : 1.377 ns
 Required Time  : 85.01 MHz ( period = 11.764 ns )
 Actual Time    : N/A
-From           : MIN_MAX:inst80|MAX_DATA_OUT[4]
-To             : MIN_MAX:inst80|SRAM_OUT_DATA[4]
+From           : MIN_MAX_RLE:inst65|MIN_MAX:MIN_MAX_1|MAX_DATA_IN_A[1]
+To             : MIN_MAX_RLE:inst65|MIN_MAX:MIN_MAX_1|SRAM_TMP_OUT_A[1]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0
 
+Type           : Clock Hold: 'RS'
+Slack          : 1.649 ns
+Required Time  : 10.00 MHz ( period = 100.000 ns )
+Actual Time    : N/A
+From           : Read_counter:inst2|lpm_counter:lpm_counter_component|cntr_lkh:auto_generated|safe_q[17]
+To             : Read_counter:inst2|lpm_counter:lpm_counter_component|cntr_lkh:auto_generated|safe_q[17]
+From Clock     : RS
+To Clock       : RS
+Failed Paths   : 0
+
 Type           : Recovery: 'IN_CLK'
-Slack          : 2.917 ns
+Slack          : 3.816 ns
 Required Time  : 15.112 ns
-Actual Time    : 12.195 ns
-From           : Registers:inst|Start_Write_s
-To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[16]
+Actual Time    : 11.296 ns
+From           : inst37
+To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[10]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0
 
 Type           : Removal: 'IN_CLK'
-Slack          : 8.259 ns
+Slack          : 7.341 ns
 Required Time  : 3.902 ns
-Actual Time    : 12.161 ns
-From           : Registers:inst|Start_Write_s
-To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[17]
+Actual Time    : 11.243 ns
+From           : inst37
+To             : lpm_dff3:inst6|lpm_ff:lpm_ff_component|dffs[4]
 From Clock     : IN_CLK
 To Clock       : IN_CLK
 Failed Paths   : 0

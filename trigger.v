@@ -3,46 +3,46 @@ module trigger
 (
 input [7:0]  Trg_Lv_UP,
 input [7:0]  Trg_Lv_DOWN,
-input [7:0]  DATA_IN_A,
-input [7:0]  DATA_IN_B,
-input [7:0]  Delay,          // вход устанавливающий длительность задержки
-input sync_sourse,           // 0/1 - канал А или В соответсвенно
-input Sync_OUT_WIN,          // синхронизация по воду/выоду из окна, окно задается Trg_Lv_UP и Trg_Lv_DOWN
-input Start_Write,           // старт записи
-input CLK_EN,                // разрешение такта
-input Enable_Trig,           // разрешение триггера
+input [7:0]  TRIG_DATA_IN,
+input [7:0]  Delay,          // Delay, LPF
+input Sync_OUT_WIN,          // Sync win mode, sets Trg_Lv_UP and Trg_Lv_DOWN
+input Start_Write,           // 
+input CLK_EN,                // 
+input Enable_Trig,           // 
 input sync_ON,
-input LA_TRIGG_IN,
-input Analog_or_LA,
+//input LA_TRIGG_IN,
+//input Analog_or_LA,
 input CLK,
     
-
-output             sync_state_out,      // выведено для отладки
-//output 
-
-output             trig_out             // выход триггера
+output reg trig_out             // выход триггера
 );
 
 reg         first_event_reg;     // oneiaea aey ?ac?aoaiey n?aaaouaaiey o?eaaa?a
 reg         last_event_reg;      // nianoaaiii nai o?eaaa?
+reg 		sync_state;
 reg [7:0]   SlCounter;           // caaa??ea
+//reg [7:0]	DATA_SYNC_0;
 reg [7:0]	DATA_SYNC;
 
-  // данные для синхронизации, в зависимости от sync_sourse, 0/1 - канал А или В соответсвенно
-wire sync_state = (Trg_Lv_UP > DATA_SYNC) & (Trg_Lv_DOWN < DATA_SYNC)? ~Sync_OUT_WIN : Sync_OUT_WIN;  // условие триггера
-wire EN_Trig = Start_Write & Enable_Trig; // разрешение триггера
+// данные для синхронизации, в зависимости от sync_sourse, 0/1 - канал А или В соответсвенно
+wire sync_state_0 = (Trg_Lv_UP > DATA_SYNC) & (Trg_Lv_DOWN < DATA_SYNC)? ~Sync_OUT_WIN : Sync_OUT_WIN;  // условие триггера
 
-assign     sync_state_out = sync_state;          // aey ioeaaee
-assign     trig_out = last_event_reg;            // auoia o?eaaa?a
+//assign     sync_state_out = sync_state;
+//assign     trig_out = last_event_reg;
 
 
 always @(posedge CLK) begin
      
-     if(sync_sourse == 0) DATA_SYNC <= DATA_IN_A;
-     else DATA_SYNC <= DATA_IN_B;
-     //wire [7:0] DATA_SYNC = ()?  : DATA_IN_B;
+     DATA_SYNC <= TRIG_DATA_IN;
      
-     if(EN_Trig == 0) begin // триггер запрещен
+     sync_state <= sync_state_0;
+     trig_out <= last_event_reg;
+     
+//     if(sync_sourse == 0) DATA_SYNC_0 <= DATA_IN_A;
+//     else DATA_SYNC_0 <= DATA_IN_B;
+     
+     
+     if(Enable_Trig == 0) begin // триггер запрещен
      
          first_event_reg <= 0;
          last_event_reg <= 0;
@@ -52,9 +52,9 @@ always @(posedge CLK) begin
      else if(CLK_EN == 1) begin // клок и триггер разрешен
          
          if(sync_ON == 0) last_event_reg <= 1'b1;
-         else if(Analog_or_LA == 1) begin
-             if(LA_TRIGG_IN == 1)last_event_reg <= 1'b1;         
-         end         
+//         else if(Analog_or_LA == 1) begin
+//             if(LA_TRIGG_IN == 1) last_event_reg <= 1'b1;         
+//         end         
          else if(first_event_reg == 0) begin    // выбор события. Если первое еще не сработало работаем с ним. Иначе - со вторым.
          
              // работаем с первым событием

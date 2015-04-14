@@ -1,1 +1,2 @@
-Warning (10268): Verilog HDL information at PWM_BackLight.v(15): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at MIN_MAX.v(11): object "MIN_MAX_LOAD" differs only in case from object "min_max_load" in the same scope
+Info (10281): Verilog HDL Declaration information at MIN_MAX_RLE.v(27): object "la_data" differs only in case from object "LA_DATA" in the same scope

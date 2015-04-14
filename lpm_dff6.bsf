@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "data[8..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[8..0]" (rect 20 26 65 39)(font "Arial" (font_size 8)))
+		(text "data[7..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[7..0]" (rect 20 26 65 39)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 48)
 		(output)
-		(text "q[8..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "q[8..0]" (rect 95 42 125 55)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 95 42 125 55)(font "Arial" (font_size 8)))
 		(line (pt 144 48)(pt 128 48)(line_width 3))
 	)
 	(drawing

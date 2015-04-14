@@ -1,10 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="HW3_2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|Read_counter:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_lkh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux1:inst26|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_l9c.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux5:inst58|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_6bc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux7:inst12|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_h9c.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|Read_counter:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_lkh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_counter2:inst25|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_rpi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|NS3|lpm_mux1:inst26|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_l9c.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -14,7 +14,7 @@ reg divCLK;
 
 always @(posedge CLK) begin
 
-   if(div_cnt == 0) divCLK = ~divCLK;
+   if(div_cnt == 0) divCLK <= ~divCLK;
    else div_cnt <= div_cnt - 8'b00000001;
    
 end

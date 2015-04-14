@@ -552,22 +552,25 @@ sel0
 result
 -1
 3
-data3
--1
-3
-data2
--1
-3
 data1
 -1
 3
 data0
 -1
 3
+data3
+-1
+2
+data2
+-1
+2
 }
 # include_file {
 lpm_mux.inc
 dd87bed9959d6126db09970164b7ba6
+}
+# hierarchies {
+lpm_mux7:inst12
 }
 # macro_sequence
 
@@ -693,424 +696,10 @@ lpm_mux7:inst12|lpm_mux:lpm_mux_component|mux_h9c:auto_generated
 
 # end
 # entity
-lpm_or0
-# storage
-db|HW3_2.(14).cnf
-db|HW3_2.(14).cnf
-# case_insensitive
-# source_file
-lpm_or0.tdf
-1bf4273494363d9f571349da591f3e4
-7
-# used_port {
-result
--1
-3
-data7_0
--1
-3
-data6_0
--1
-3
-data5_0
--1
-3
-data4_0
--1
-3
-data3_0
--1
-3
-data2_0
--1
-3
-data1_0
--1
-3
-data0_0
--1
-3
-}
-# include_file {
-lpm_or.inc
-b3db57fced17f86f7678b84966053be
-}
-# macro_sequence
-
-# end
-# entity
-lpm_or
-# storage
-db|HW3_2.(15).cnf
-db|HW3_2.(15).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
-9d9b85358b57ebf2c2ba1d6b37aa4141
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-1
-PARAMETER_UNKNOWN
-USR
-LPM_SIZE
-8
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-result0
--1
-3
-data7_0
--1
-3
-data6_0
--1
-3
-data5_0
--1
-3
-data4_0
--1
-3
-data3_0
--1
-3
-data2_0
--1
-3
-data1_0
--1
-3
-data0_0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_and2
-# storage
-db|HW3_2.(16).cnf
-db|HW3_2.(16).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-lpm_and2.v
-69c916b410ec10acf832f32fcd4da12
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-lpm_and
-# storage
-db|HW3_2.(17).cnf
-db|HW3_2.(17).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_and.tdf
-dae67a4b94d163e024adf962885fdb7
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-8
-PARAMETER_SIGNED_DEC
-USR
-LPM_SIZE
-3
-PARAMETER_SIGNED_DEC
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-result
--1
-3
-data
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_xor1
-# storage
-db|HW3_2.(18).cnf
-db|HW3_2.(18).cnf
-# case_insensitive
-# source_file
-lpm_xor1.tdf
-fee16a433bca121762787929c59d4b4
-7
-# used_port {
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1x7
--1
-3
-data1x6
--1
-3
-data1x5
--1
-3
-data1x4
--1
-3
-data1x3
--1
-3
-data1x2
--1
-3
-data1x1
--1
-3
-data1x0
--1
-3
-data0x7
--1
-3
-data0x6
--1
-3
-data0x5
--1
-3
-data0x4
--1
-3
-data0x3
--1
-3
-data0x2
--1
-3
-data0x1
--1
-3
-data0x0
--1
-3
-}
-# include_file {
-lpm_xor.inc
-526536b724d5f608db77a5d9557c5
-}
-# macro_sequence
-
-# end
-# entity
-lpm_xor
-# storage
-db|HW3_2.(19).cnf
-db|HW3_2.(19).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_xor.tdf
-50b371f29654dff12ba9fe77a68b3329
-7
-# user_parameter {
-LPM_WIDTH
-8
-PARAMETER_UNKNOWN
-USR
-LPM_SIZE
-2
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1_7
--1
-3
-data1_6
--1
-3
-data1_5
--1
-3
-data1_4
--1
-3
-data1_3
--1
-3
-data1_2
--1
-3
-data1_1
--1
-3
-data1_0
--1
-3
-data0_7
--1
-3
-data0_6
--1
-3
-data0_5
--1
-3
-data0_4
--1
-3
-data0_3
--1
-3
-data0_2
--1
-3
-data0_1
--1
-3
-data0_0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
 lpm_dff4
 # storage
-db|HW3_2.(20).cnf
-db|HW3_2.(20).cnf
+db|HW3_2.(15).cnf
+db|HW3_2.(15).cnf
 # case_insensitive
 # source_file
 lpm_dff4.tdf
@@ -1141,6 +730,9 @@ q1
 q0
 -1
 3
+enable
+-1
+3
 data7
 -1
 3
@@ -1168,9 +760,6 @@ data0
 clock
 -1
 3
-enable
--1
-2
 }
 # include_file {
 lpm_ff.inc
@@ -1182,8 +771,8 @@ lpm_ff.inc
 # entity
 lpm_ff
 # storage
-db|HW3_2.(21).cnf
-db|HW3_2.(21).cnf
+db|HW3_2.(16).cnf
+db|HW3_2.(16).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|megafunctions|lpm_ff.tdf
@@ -1287,113 +876,153 @@ clock
 -1
 3
 }
-# hierarchies {
-lpm_dff4:inst24|lpm_ff:lpm_ff_component
-lpm_dff4:inst31|lpm_ff:lpm_ff_component
+# macro_sequence
+
+# end
+# entity
+lpm_dff5
+# storage
+db|HW3_2.(17).cnf
+db|HW3_2.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lpm_dff5.v
+e01bb7503823d9bea226615ebd3df8
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # macro_sequence
 
 # end
 # entity
-lpm_and1
+lpm_ff
 # storage
-db|HW3_2.(22).cnf
-db|HW3_2.(22).cnf
+db|HW3_2.(18).cnf
+db|HW3_2.(18).cnf
 # case_insensitive
 # source_file
-lpm_and1.tdf
-1a2a67906715757fee219c1525c79db0
+|altera|91sp2|quartus|libraries|megafunctions|lpm_ff.tdf
+6f1796a38d8b519cf7b8f38b5da1ac5b
 7
-# used_port {
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1x7
--1
-3
-data1x6
--1
-3
-data1x5
--1
-3
-data1x4
--1
-3
-data1x3
--1
-3
-data1x2
--1
-3
-data1x1
--1
-3
-data1x0
--1
-3
-data0x7
--1
-3
-data0x6
--1
-3
-data0x5
--1
-3
-data0x4
--1
-3
-data0x3
--1
-3
-data0x2
--1
-3
-data0x1
--1
-3
-data0x0
--1
-3
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+MAX II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
 }
-# include_file {
-lpm_and.inc
-736ee09b68691a8143f713d19e2baa41
+# used_port {
+sclr
+-1
+3
+q
+-1
+3
+data
+-1
+3
+clock
+-1
+3
 }
 # macro_sequence
 
 # end
 # entity
-lpm_and
+lpm_counter2
 # storage
-db|HW3_2.(23).cnf
-db|HW3_2.(23).cnf
+db|HW3_2.(19).cnf
+db|HW3_2.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lpm_counter2.v
+c574cea592072cde20c928839dede6
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|HW3_2.(20).cnf
+db|HW3_2.(20).cnf
 # case_insensitive
 # source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_and.tdf
-dae67a4b94d163e024adf962885fdb7
+|altera|91sp2|quartus|libraries|megafunctions|lpm_counter.tdf
+151f75e8fcf5e87e72b7df6bb2ea
 7
 # user_parameter {
 AUTO_CARRY_CHAINS
@@ -1414,100 +1043,153 @@ IGNORE_CASCADE
 USR
 LPM_WIDTH
 8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
 PARAMETER_UNKNOWN
 USR
-LPM_SIZE
-2
+LPM_MODULUS
+0
 PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-CARRY_CHAIN
-MANUAL
+DEF
+LPM_AVALUE
+UNUSED
 PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN
-MANUAL
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
 PARAMETER_UNKNOWN
 USR
 DEVICE_FAMILY
 MAX II
 PARAMETER_UNKNOWN
 USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_rpi
+PARAMETER_UNKNOWN
+USR
 }
 # used_port {
-result7
+sclr
 -1
 3
-result6
+q
 -1
 3
-result5
+cout
 -1
 3
-result4
+cnt_en
 -1
 3
-result3
+clock
 -1
 3
-result2
+sset
+-1
+1
+sload
+-1
+1
+data
+-1
+1
+aset
+-1
+1
+aload
+-1
+1
+aclr
+-1
+1
+updown
+-1
+2
+clk_en
+-1
+2
+cin
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+cntr_rpi
+# storage
+db|HW3_2.(21).cnf
+db|HW3_2.(21).cnf
+# case_insensitive
+# source_file
+db|cntr_rpi.tdf
+29dc57d35e80ae5446c25337f54b3fe9
+7
+# used_port {
+sclr
 -1
 3
-result1
+q7
 -1
 3
-result0
+q6
 -1
 3
-data1_7
+q5
 -1
 3
-data1_6
+q4
 -1
 3
-data1_5
+q3
 -1
 3
-data1_4
+q2
 -1
 3
-data1_3
+q1
 -1
 3
-data1_2
+q0
 -1
 3
-data1_1
+cout
 -1
 3
-data1_0
+cnt_en
 -1
 3
-data0_7
--1
-3
-data0_6
--1
-3
-data0_5
--1
-3
-data0_4
--1
-3
-data0_3
--1
-3
-data0_2
--1
-3
-data0_1
--1
-3
-data0_0
+clock
 -1
 3
 }
@@ -1517,8 +1199,8 @@ data0_0
 # entity
 lpm_dff3
 # storage
-db|HW3_2.(25).cnf
-db|HW3_2.(25).cnf
+db|HW3_2.(22).cnf
+db|HW3_2.(22).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1553,8 +1235,8 @@ lpm_dff3:inst6
 # entity
 lpm_ff
 # storage
-db|HW3_2.(26).cnf
-db|HW3_2.(26).cnf
+db|HW3_2.(23).cnf
+db|HW3_2.(23).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|megafunctions|lpm_ff.tdf
@@ -1625,8 +1307,8 @@ lpm_dff3:inst6|lpm_ff:lpm_ff_component
 # entity
 lpm_mux5
 # storage
-db|HW3_2.(27).cnf
-db|HW3_2.(27).cnf
+db|HW3_2.(24).cnf
+db|HW3_2.(24).cnf
 # case_insensitive
 # source_file
 lpm_mux5.tdf
@@ -1812,8 +1494,8 @@ lpm_mux5:inst58
 # entity
 lpm_mux
 # storage
-db|HW3_2.(28).cnf
-db|HW3_2.(28).cnf
+db|HW3_2.(25).cnf
+db|HW3_2.(25).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|megafunctions|lpm_mux.tdf
@@ -2037,8 +1719,8 @@ lpm_mux5:inst58|lpm_mux:lpm_mux_component
 # entity
 mux_6bc
 # storage
-db|HW3_2.(29).cnf
-db|HW3_2.(29).cnf
+db|HW3_2.(26).cnf
+db|HW3_2.(26).cnf
 # case_insensitive
 # source_file
 db|mux_6bc.tdf
@@ -2220,8 +1902,8 @@ lpm_mux5:inst58|lpm_mux:lpm_mux_component|mux_6bc:auto_generated
 # entity
 Read_counter
 # storage
-db|HW3_2.(30).cnf
-db|HW3_2.(30).cnf
+db|HW3_2.(27).cnf
+db|HW3_2.(27).cnf
 # case_insensitive
 # source_file
 read_counter.tdf
@@ -2362,8 +2044,8 @@ Read_counter:inst2
 # entity
 lpm_counter
 # storage
-db|HW3_2.(31).cnf
-db|HW3_2.(31).cnf
+db|HW3_2.(28).cnf
+db|HW3_2.(28).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|megafunctions|lpm_counter.tdf
@@ -2574,8 +2256,8 @@ Read_counter:inst2|lpm_counter:lpm_counter_component
 # entity
 cntr_lkh
 # storage
-db|HW3_2.(32).cnf
-db|HW3_2.(32).cnf
+db|HW3_2.(29).cnf
+db|HW3_2.(29).cnf
 # case_insensitive
 # source_file
 db|cntr_lkh.tdf
@@ -2710,1190 +2392,10 @@ Read_counter:inst2|lpm_counter:lpm_counter_component|cntr_lkh:auto_generated
 
 # end
 # entity
-cntADDR
-# storage
-db|HW3_2.(33).cnf
-db|HW3_2.(33).cnf
-# case_insensitive
-# source_file
-cntaddr.tdf
-46d31069a19a9451bc3c79d8b0560
-7
-# used_port {
-q9
--1
-3
-q8
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q17
--1
-3
-q16
--1
-3
-q15
--1
-3
-q14
--1
-3
-q13
--1
-3
-q12
--1
-3
-q11
--1
-3
-q10
--1
-3
-q1
--1
-3
-q0
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_counter.inc
-c5cfeeabc5f2ab60b3453f6abbc42b41
-}
-# macro_sequence
-
-# end
-# entity
-lpm_counter
-# storage
-db|HW3_2.(34).cnf
-db|HW3_2.(34).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_counter.tdf
-151f75e8fcf5e87e72b7df6bb2ea
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-18
-PARAMETER_UNKNOWN
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_PORT_UPDOWN
-PORT_UNUSED
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-NOT_GATE_PUSH_BACK
-ON
-NOT_GATE_PUSH_BACK
-USR
-CARRY_CNT_EN
-SMART
-PARAMETER_UNKNOWN
-DEF
-LABWIDE_SCLR
-ON
-PARAMETER_UNKNOWN
-DEF
-USE_NEW_VERSION
-TRUE
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-cntr_tth
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-q9
--1
-3
-q8
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q17
--1
-3
-q16
--1
-3
-q15
--1
-3
-q14
--1
-3
-q13
--1
-3
-q12
--1
-3
-q11
--1
-3
-q10
--1
-3
-q1
--1
-3
-q0
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-cntr_tth
-# storage
-db|HW3_2.(35).cnf
-db|HW3_2.(35).cnf
-# case_insensitive
-# source_file
-db|cntr_tth.tdf
-48bdb8c6fc68b45e02ded16c5988a70
-7
-# used_port {
-q9
--1
-3
-q8
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q17
--1
-3
-q16
--1
-3
-q15
--1
-3
-q14
--1
-3
-q13
--1
-3
-q12
--1
-3
-q11
--1
-3
-q10
--1
-3
-q1
--1
-3
-q0
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_counter
-# storage
-db|HW3_2.(37).cnf
-db|HW3_2.(37).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_counter.tdf
-151f75e8fcf5e87e72b7df6bb2ea
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-8
-PARAMETER_SIGNED_DEC
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_PORT_UPDOWN
-PORT_UNUSED
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-NOT_GATE_PUSH_BACK
-ON
-NOT_GATE_PUSH_BACK
-USR
-CARRY_CNT_EN
-SMART
-PARAMETER_UNKNOWN
-DEF
-LABWIDE_SCLR
-ON
-PARAMETER_UNKNOWN
-DEF
-USE_NEW_VERSION
-TRUE
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-cntr_45i
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-sclr
--1
-3
-q
--1
-3
-cout
--1
-3
-clock
--1
-3
-sset
--1
-1
-sload
--1
-1
-data
--1
-1
-aset
--1
-1
-aload
--1
-1
-aclr
--1
-1
-updown
--1
-2
-cnt_en
--1
-2
-clk_en
--1
-2
-cin
--1
-2
-}
-# macro_sequence
-
-# end
-# entity
-cntr_45i
-# storage
-db|HW3_2.(38).cnf
-db|HW3_2.(38).cnf
-# case_insensitive
-# source_file
-db|cntr_45i.tdf
-650c79bc8bde0408dddb9f1be304f7d
-7
-# used_port {
-sclr
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-cout
--1
-3
-clock
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_mux8
-# storage
-db|HW3_2.(39).cnf
-db|HW3_2.(39).cnf
-# case_insensitive
-# source_file
-lpm_mux8.tdf
-8b17f667af6e922027f1d62c7a8df92
-7
-# used_port {
-sel
--1
-3
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1x7
--1
-3
-data1x6
--1
-3
-data1x5
--1
-3
-data1x4
--1
-3
-data1x3
--1
-3
-data1x2
--1
-3
-data1x1
--1
-3
-data1x0
--1
-3
-data0x7
--1
-3
-data0x6
--1
-3
-data0x5
--1
-3
-data0x4
--1
-3
-data0x3
--1
-3
-data0x2
--1
-3
-data0x1
--1
-3
-data0x0
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-}
-# macro_sequence
-
-# end
-# entity
-lpm_mux
-# storage
-db|HW3_2.(40).cnf
-db|HW3_2.(40).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_mux.tdf
-9d45665215a7636e457c26f5f1517
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-8
-PARAMETER_UNKNOWN
-USR
-LPM_SIZE
-2
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHS
-1
-PARAMETER_UNKNOWN
-USR
-LPM_PIPELINE
-1
-PARAMETER_UNKNOWN
-USR
-CBXI_PARAMETER
-mux_d7e
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-sel0
--1
-3
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data1_7
--1
-3
-data1_6
--1
-3
-data1_5
--1
-3
-data1_4
--1
-3
-data1_3
--1
-3
-data1_2
--1
-3
-data1_1
--1
-3
-data1_0
--1
-3
-data0_7
--1
-3
-data0_6
--1
-3
-data0_5
--1
-3
-data0_4
--1
-3
-data0_3
--1
-3
-data0_2
--1
-3
-data0_1
--1
-3
-data0_0
--1
-3
-clock
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-mux_d7e
-# storage
-db|HW3_2.(41).cnf
-db|HW3_2.(41).cnf
-# case_insensitive
-# source_file
-db|mux_d7e.tdf
-8dfa8792a8fdb477e936181493ac422
-7
-# used_port {
-sel0
--1
-3
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-data9
--1
-3
-data8
--1
-3
-data7
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data15
--1
-3
-data14
--1
-3
-data13
--1
-3
-data12
--1
-3
-data11
--1
-3
-data10
--1
-3
-data1
--1
-3
-data0
--1
-3
-clock
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_dff_min
-# storage
-db|HW3_2.(42).cnf
-db|HW3_2.(42).cnf
-# case_insensitive
-# source_file
-lpm_dff_min.tdf
-fbfd288cabf1cdc8b2fec7afe649c9
-7
-# used_port {
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-enable
--1
-3
-data7
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data1
--1
-3
-data0
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_ff.inc
-5b1f18ec4f969a147b22e8c42bf962ac
-}
-# macro_sequence
-
-# end
-# entity
-lpm_counter2
-# storage
-db|HW3_2.(44).cnf
-db|HW3_2.(44).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-lpm_counter2.v
-c574cea592072cde20c928839dede6
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-lpm_counter2:inst25
-}
-# macro_sequence
-
-# end
-# entity
-lpm_counter
-# storage
-db|HW3_2.(45).cnf
-db|HW3_2.(45).cnf
-# case_insensitive
-# source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_counter.tdf
-151f75e8fcf5e87e72b7df6bb2ea
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-8
-PARAMETER_SIGNED_DEC
-USR
-LPM_DIRECTION
-UP
-PARAMETER_UNKNOWN
-USR
-LPM_MODULUS
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_PORT_UPDOWN
-PORT_UNUSED
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-NOT_GATE_PUSH_BACK
-ON
-NOT_GATE_PUSH_BACK
-USR
-CARRY_CNT_EN
-SMART
-PARAMETER_UNKNOWN
-DEF
-LABWIDE_SCLR
-ON
-PARAMETER_UNKNOWN
-DEF
-USE_NEW_VERSION
-TRUE
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-cntr_rpi
-PARAMETER_UNKNOWN
-USR
-}
-# used_port {
-sclr
--1
-3
-q
--1
-3
-cout
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-sset
--1
-1
-sload
--1
-1
-data
--1
-1
-aset
--1
-1
-aload
--1
-1
-aclr
--1
-1
-updown
--1
-2
-clk_en
--1
-2
-cin
--1
-2
-}
-# hierarchies {
-lpm_counter2:inst25|lpm_counter:lpm_counter_component
-}
-# macro_sequence
-
-# end
-# entity
-cntr_rpi
-# storage
-db|HW3_2.(46).cnf
-db|HW3_2.(46).cnf
-# case_insensitive
-# source_file
-db|cntr_rpi.tdf
-29dc57d35e80ae5446c25337f54b3fe9
-7
-# used_port {
-sclr
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-cout
--1
-3
-cnt_en
--1
-3
-clock
--1
-3
-}
-# hierarchies {
-lpm_counter2:inst25|lpm_counter:lpm_counter_component|cntr_rpi:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
 lpm_dff4
 # storage
-db|HW3_2.(51).cnf
-db|HW3_2.(51).cnf
-# case_insensitive
-# source_file
-lpm_dff4.tdf
-9b7217df441f3186ad5260df9eb2f4
-7
-# used_port {
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q1
--1
-3
-q0
--1
-3
-enable
--1
-3
-data7
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data1
--1
-3
-data0
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_ff.inc
-5b1f18ec4f969a147b22e8c42bf962ac
-}
-# hierarchies {
-lpm_dff4:inst24
-}
-# macro_sequence
-
-# end
-# entity
-lpm_dff4
-# storage
-db|HW3_2.(76).cnf
-db|HW3_2.(76).cnf
+db|HW3_2.(30).cnf
+db|HW3_2.(30).cnf
 # case_insensitive
 # source_file
 lpm_dff4.tdf
@@ -3935,26 +2437,19 @@ clock
 lpm_ff.inc
 5b1f18ec4f969a147b22e8c42bf962ac
 }
-# hierarchies {
-lpm_dff4:inst31
-}
 # macro_sequence
 
 # end
 # entity
-lpm_dff5
+trigger
 # storage
-db|HW3_2.(91).cnf
-db|HW3_2.(91).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
+db|HW3_2.(2).cnf
+db|HW3_2.(2).cnf
 # case_sensitive
 # source_file
-lpm_dff5.v
-e01bb7503823d9bea226615ebd3df8
-8
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
 OFF
@@ -3971,1291 +2466,292 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-lpm_dff5:inst63
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(14).cnf
+db|HW3_2.(14).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # macro_sequence
 
 # end
 # entity
-lpm_ff
+trigger
 # storage
-db|HW3_2.(92).cnf
-db|HW3_2.(92).cnf
+db|HW3_2.(31).cnf
+db|HW3_2.(31).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(3).cnf
+db|HW3_2.(3).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(32).cnf
+db|HW3_2.(32).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(33).cnf
+db|HW3_2.(33).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(35).cnf
+db|HW3_2.(35).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(38).cnf
+db|HW3_2.(38).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(40).cnf
+db|HW3_2.(40).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+lpm_dff4
+# storage
+db|HW3_2.(45).cnf
+db|HW3_2.(45).cnf
 # case_insensitive
 # source_file
-|altera|91sp2|quartus|libraries|megafunctions|lpm_ff.tdf
-6f1796a38d8b519cf7b8f38b5da1ac5b
-7
-# user_parameter {
-LPM_WIDTH
-8
-PARAMETER_SIGNED_DEC
-USR
-LPM_AVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_SVALUE
-UNUSED
-PARAMETER_UNKNOWN
-DEF
-LPM_FFTYPE
-DFF
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-MAX II
-PARAMETER_UNKNOWN
-USR
-CBXI_PARAMETER
-NOTHING
-PARAMETER_UNKNOWN
-DEF
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-sclr
--1
-3
-q
--1
-3
-data
--1
-3
-clock
--1
-3
-}
-# hierarchies {
-lpm_dff5:inst63|lpm_ff:lpm_ff_component
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(50).cnf
-db|HW3_2.(50).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(59).cnf
-db|HW3_2.(59).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(71).cnf
-db|HW3_2.(71).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(80).cnf
-db|HW3_2.(80).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(87).cnf
-db|HW3_2.(87).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(94).cnf
-db|HW3_2.(94).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(102).cnf
-db|HW3_2.(102).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(107).cnf
-db|HW3_2.(107).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(109).cnf
-db|HW3_2.(109).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(115).cnf
-db|HW3_2.(115).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(119).cnf
-db|HW3_2.(119).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(122).cnf
-db|HW3_2.(122).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(123).cnf
-db|HW3_2.(123).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(126).cnf
-db|HW3_2.(126).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(128).cnf
-db|HW3_2.(128).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(130).cnf
-db|HW3_2.(130).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(131).cnf
-db|HW3_2.(131).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(133).cnf
-db|HW3_2.(133).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(135).cnf
-db|HW3_2.(135).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(138).cnf
-db|HW3_2.(138).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(140).cnf
-db|HW3_2.(140).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(141).cnf
-db|HW3_2.(141).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(144).cnf
-db|HW3_2.(144).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(146).cnf
-db|HW3_2.(146).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(148).cnf
-db|HW3_2.(148).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(150).cnf
-db|HW3_2.(150).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(152).cnf
-db|HW3_2.(152).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(154).cnf
-db|HW3_2.(154).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(156).cnf
-db|HW3_2.(156).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(157).cnf
-db|HW3_2.(157).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(160).cnf
-db|HW3_2.(160).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(161).cnf
-db|HW3_2.(161).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(164).cnf
-db|HW3_2.(164).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(165).cnf
-db|HW3_2.(165).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(168).cnf
-db|HW3_2.(168).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(170).cnf
-db|HW3_2.(170).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(172).cnf
-db|HW3_2.(172).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(174).cnf
-db|HW3_2.(174).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(176).cnf
-db|HW3_2.(176).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(178).cnf
-db|HW3_2.(178).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(180).cnf
-db|HW3_2.(180).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-lpm_mux7
-# storage
-db|HW3_2.(181).cnf
-db|HW3_2.(181).cnf
-# case_insensitive
-# source_file
-lpm_mux7.tdf
-2661fb6ca7dbc3623252fa7bba44cbf
+lpm_dff4.tdf
+9b7217df441f3186ad5260df9eb2f4
 7
 # used_port {
-sel1
+q7
 -1
 3
-sel0
+q6
 -1
 3
-result
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
 -1
 3
 data1
@@ -5264,32 +2760,326 @@ data1
 data0
 -1
 3
-data3
+clock
 -1
-2
-data2
+3
+enable
 -1
 2
 }
 # include_file {
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
+lpm_ff.inc
+5b1f18ec4f969a147b22e8c42bf962ac
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(34).cnf
+db|HW3_2.(34).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(36).cnf
+db|HW3_2.(36).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(46).cnf
+db|HW3_2.(46).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(49).cnf
+db|HW3_2.(49).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(52).cnf
+db|HW3_2.(52).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(55).cnf
+db|HW3_2.(55).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(58).cnf
+db|HW3_2.(58).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(61).cnf
+db|HW3_2.(61).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(10).cnf
+db|HW3_2.(10).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+Decimation_counter
+# storage
+db|HW3_2.(64).cnf
+db|HW3_2.(64).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+decimation_counter.v
+d69d1dd2569deefd55cba414db43e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # hierarchies {
-lpm_mux7:inst12
+Decimation_counter:inst13
 }
 # macro_sequence
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(183).cnf
-db|HW3_2.(183).cnf
+db|HW3_2.(67).cnf
+db|HW3_2.(67).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5311,14 +3101,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(185).cnf
-db|HW3_2.(185).cnf
+db|HW3_2.(68).cnf
+db|HW3_2.(68).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5340,14 +3130,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(187).cnf
-db|HW3_2.(187).cnf
+db|HW3_2.(39).cnf
+db|HW3_2.(39).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5369,14 +3159,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(189).cnf
-db|HW3_2.(189).cnf
+db|HW3_2.(42).cnf
+db|HW3_2.(42).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5398,14 +3188,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(190).cnf
-db|HW3_2.(190).cnf
+db|HW3_2.(41).cnf
+db|HW3_2.(41).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5427,14 +3217,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(192).cnf
-db|HW3_2.(192).cnf
+db|HW3_2.(44).cnf
+db|HW3_2.(44).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5456,14 +3246,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(195).cnf
-db|HW3_2.(195).cnf
+db|HW3_2.(43).cnf
+db|HW3_2.(43).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5485,14 +3275,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(197).cnf
-db|HW3_2.(197).cnf
+db|HW3_2.(48).cnf
+db|HW3_2.(48).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5514,14 +3304,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(198).cnf
-db|HW3_2.(198).cnf
+db|HW3_2.(51).cnf
+db|HW3_2.(51).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5543,14 +3333,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(201).cnf
-db|HW3_2.(201).cnf
+db|HW3_2.(53).cnf
+db|HW3_2.(53).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5572,14 +3362,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(203).cnf
-db|HW3_2.(203).cnf
+db|HW3_2.(56).cnf
+db|HW3_2.(56).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5601,14 +3391,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(205).cnf
-db|HW3_2.(205).cnf
+db|HW3_2.(57).cnf
+db|HW3_2.(57).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5630,14 +3420,2573 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+trigger
 # storage
-db|HW3_2.(207).cnf
-db|HW3_2.(207).cnf
+db|HW3_2.(60).cnf
+db|HW3_2.(60).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+LA_TRIG
+# storage
+db|HW3_2.(62).cnf
+db|HW3_2.(62).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+la_trig.v
+17696cad7c3d5f385d4f1bb144cfcef0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Synchronization:inst67|LA_TRIG:LA_TRIG_1
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(63).cnf
+db|HW3_2.(63).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(66).cnf
+db|HW3_2.(66).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(69).cnf
+db|HW3_2.(69).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(71).cnf
+db|HW3_2.(71).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(72).cnf
+db|HW3_2.(72).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(77).cnf
+db|HW3_2.(77).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(79).cnf
+db|HW3_2.(79).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(47).cnf
+db|HW3_2.(47).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(54).cnf
+db|HW3_2.(54).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(50).cnf
+db|HW3_2.(50).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(65).cnf
+db|HW3_2.(65).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(37).cnf
+db|HW3_2.(37).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(74).cnf
+db|HW3_2.(74).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(85).cnf
+db|HW3_2.(85).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(87).cnf
+db|HW3_2.(87).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(89).cnf
+db|HW3_2.(89).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(90).cnf
+db|HW3_2.(90).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(94).cnf
+db|HW3_2.(94).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(95).cnf
+db|HW3_2.(95).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(97).cnf
+db|HW3_2.(97).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(98).cnf
+db|HW3_2.(98).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(100).cnf
+db|HW3_2.(100).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(101).cnf
+db|HW3_2.(101).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(59).cnf
+db|HW3_2.(59).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(104).cnf
+db|HW3_2.(104).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(83).cnf
+db|HW3_2.(83).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(106).cnf
+db|HW3_2.(106).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(108).cnf
+db|HW3_2.(108).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(109).cnf
+db|HW3_2.(109).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(111).cnf
+db|HW3_2.(111).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(112).cnf
+db|HW3_2.(112).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(114).cnf
+db|HW3_2.(114).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(115).cnf
+db|HW3_2.(115).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(117).cnf
+db|HW3_2.(117).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(118).cnf
+db|HW3_2.(118).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(121).cnf
+db|HW3_2.(121).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(122).cnf
+db|HW3_2.(122).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(124).cnf
+db|HW3_2.(124).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(125).cnf
+db|HW3_2.(125).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(120).cnf
+db|HW3_2.(120).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(127).cnf
+db|HW3_2.(127).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(70).cnf
+db|HW3_2.(70).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(88).cnf
+db|HW3_2.(88).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(81).cnf
+db|HW3_2.(81).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(96).cnf
+db|HW3_2.(96).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(93).cnf
+db|HW3_2.(93).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(102).cnf
+db|HW3_2.(102).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(99).cnf
+db|HW3_2.(99).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(105).cnf
+db|HW3_2.(105).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(103).cnf
+db|HW3_2.(103).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(110).cnf
+db|HW3_2.(110).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(107).cnf
+db|HW3_2.(107).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(116).cnf
+db|HW3_2.(116).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(113).cnf
+db|HW3_2.(113).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(123).cnf
+db|HW3_2.(123).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(119).cnf
+db|HW3_2.(119).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(128).cnf
+db|HW3_2.(128).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(126).cnf
+db|HW3_2.(126).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(131).cnf
+db|HW3_2.(131).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(130).cnf
+db|HW3_2.(130).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(133).cnf
+db|HW3_2.(133).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(132).cnf
+db|HW3_2.(132).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(135).cnf
+db|HW3_2.(135).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(134).cnf
+db|HW3_2.(134).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(137).cnf
+db|HW3_2.(137).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(136).cnf
+db|HW3_2.(136).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(139).cnf
+db|HW3_2.(139).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(138).cnf
+db|HW3_2.(138).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(141).cnf
+db|HW3_2.(141).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(140).cnf
+db|HW3_2.(140).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(143).cnf
+db|HW3_2.(143).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(142).cnf
+db|HW3_2.(142).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(145).cnf
+db|HW3_2.(145).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(129).cnf
+db|HW3_2.(129).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(147).cnf
+db|HW3_2.(147).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(150).cnf
+db|HW3_2.(150).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(151).cnf
+db|HW3_2.(151).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(149).cnf
+db|HW3_2.(149).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(153).cnf
+db|HW3_2.(153).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(144).cnf
+db|HW3_2.(144).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(148).cnf
+db|HW3_2.(148).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(146).cnf
+db|HW3_2.(146).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(154).cnf
+db|HW3_2.(154).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(152).cnf
+db|HW3_2.(152).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(157).cnf
+db|HW3_2.(157).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(155).cnf
+db|HW3_2.(155).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(159).cnf
+db|HW3_2.(159).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5670,7 +6019,7 @@ ON
 # case_sensitive
 # source_file
 synchronization.v
-edd96b881525ad8e72e7279438eceb8
+9c5cb747ef8f4f525186a51a96e8d5d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5689,13 +6038,11 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # include_file {
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
 trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
+818ae2aaeaebb058a5c026f6ad83cc4
 }
 # hierarchies {
-Synchronization:inst74
+Synchronization:inst67
 }
 # macro_sequence
 
@@ -5703,505 +6050,12 @@ Synchronization:inst74
 # entity
 trigger
 # storage
-db|HW3_2.(2).cnf
-db|HW3_2.(2).cnf
+db|HW3_2.(162).cnf
+db|HW3_2.(162).cnf
 # case_sensitive
 # source_file
 trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(3).cnf
-db|HW3_2.(3).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(10).cnf
-db|HW3_2.(10).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(24).cnf
-db|HW3_2.(24).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(36).cnf
-db|HW3_2.(36).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(43).cnf
-db|HW3_2.(43).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(48).cnf
-db|HW3_2.(48).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(49).cnf
-db|HW3_2.(49).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(52).cnf
-db|HW3_2.(52).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(53).cnf
-db|HW3_2.(53).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(54).cnf
-db|HW3_2.(54).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(55).cnf
-db|HW3_2.(55).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(56).cnf
-db|HW3_2.(56).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(57).cnf
-db|HW3_2.(57).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(58).cnf
-db|HW3_2.(58).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(60).cnf
-db|HW3_2.(60).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-trigger
-# storage
-db|HW3_2.(61).cnf
-db|HW3_2.(61).cnf
-# case_sensitive
-# source_file
-trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
-0
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-WIN_Counter
-# storage
-db|HW3_2.(62).cnf
-db|HW3_2.(62).cnf
-# case_sensitive
-# source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6225,17 +6079,13 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 # entity
 MIN_MAX
 # storage
-db|HW3_2.(63).cnf
-db|HW3_2.(63).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
+db|HW3_2.(163).cnf
+db|HW3_2.(163).cnf
 # case_sensitive
 # source_file
 min_max.v
-dd6024d20d770fc8aaeb9a7852d7143
-8
+eb82d0c4a338fdff36925b06926a1bb
+0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
 OFF
@@ -6251,10 +6101,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# hierarchies {
-MIN_MAX:inst80
-MIN_MAX:inst81
 }
 # macro_sequence
 
@@ -6262,12 +6108,12 @@ MIN_MAX:inst81
 # entity
 trigger
 # storage
-db|HW3_2.(47).cnf
-db|HW3_2.(47).cnf
+db|HW3_2.(165).cnf
+db|HW3_2.(165).cnf
 # case_sensitive
 # source_file
 trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6289,14 +6135,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-WIN_Counter
+MIN_MAX
 # storage
-db|HW3_2.(64).cnf
-db|HW3_2.(64).cnf
+db|HW3_2.(166).cnf
+db|HW3_2.(166).cnf
 # case_sensitive
 # source_file
-win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6318,19 +6164,15 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 
 # end
 # entity
-Decimation_counter
+trigger
 # storage
-db|HW3_2.(65).cnf
-db|HW3_2.(65).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
+db|HW3_2.(156).cnf
+db|HW3_2.(156).cnf
 # case_sensitive
 # source_file
-decimation_counter.v
-1a57bc229bcf951517d4bf54d1b58d16
-8
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
 OFF
@@ -6347,8 +6189,266 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-Decimation_counter:inst13
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(160).cnf
+db|HW3_2.(160).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(158).cnf
+db|HW3_2.(158).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(167).cnf
+db|HW3_2.(167).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(169).cnf
+db|HW3_2.(169).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(170).cnf
+db|HW3_2.(170).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(164).cnf
+db|HW3_2.(164).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(171).cnf
+db|HW3_2.(171).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(168).cnf
+db|HW3_2.(168).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(173).cnf
+db|HW3_2.(173).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # macro_sequence
 
@@ -6361,7 +6461,7 @@ db|HW3_2.(0).cnf
 # case_insensitive
 # source_file
 ns3.bdf
-2f149121486c691ed718e3e96340d6d1
+fcf5493892ed97b2baa8659249082
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -6376,12 +6476,12 @@ AUTO
 # entity
 trigger
 # storage
-db|HW3_2.(66).cnf
-db|HW3_2.(66).cnf
+db|HW3_2.(175).cnf
+db|HW3_2.(175).cnf
 # case_sensitive
 # source_file
 trigger.v
-8a3b1c92bcfb7dc86b08d3458fc9365
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6399,8 +6499,250 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(176).cnf
+db|HW3_2.(176).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(172).cnf
+db|HW3_2.(172).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX_RLE
+# storage
+db|HW3_2.(174).cnf
+db|HW3_2.(174).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+min_max_rle.v
+5fe85b57d488f72e02dc0ca49b835e3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+rle.v
+df26db188f78191a1d4bb66748b1a0
+}
 # hierarchies {
-Synchronization:inst74|trigger:trigger_1
+MIN_MAX_RLE:inst65
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(177).cnf
+db|HW3_2.(177).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+RLE
+# storage
+db|HW3_2.(178).cnf
+db|HW3_2.(178).cnf
+# case_sensitive
+# source_file
+rle.v
+df26db188f78191a1d4bb66748b1a0
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(161).cnf
+db|HW3_2.(161).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(179).cnf
+db|HW3_2.(179).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+RLE
+# storage
+db|HW3_2.(180).cnf
+db|HW3_2.(180).cnf
+# case_sensitive
+# source_file
+rle.v
+df26db188f78191a1d4bb66748b1a0
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # macro_sequence
 
@@ -6408,12 +6750,222 @@ Synchronization:inst74|trigger:trigger_1
 # entity
 WIN_Counter
 # storage
-db|HW3_2.(67).cnf
-db|HW3_2.(67).cnf
+db|HW3_2.(182).cnf
+db|HW3_2.(182).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
 # case_sensitive
 # source_file
 win_counter.v
-aefbb751658bd5fd6779221f56d19b69
+3ae8cc4ec2e27fd9cf3e6b7b6d0db
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+WIN_Counter:inst68
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(183).cnf
+db|HW3_2.(183).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(184).cnf
+db|HW3_2.(184).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+RLE
+# storage
+db|HW3_2.(185).cnf
+db|HW3_2.(185).cnf
+# case_sensitive
+# source_file
+rle.v
+df26db188f78191a1d4bb66748b1a0
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(186).cnf
+db|HW3_2.(186).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(187).cnf
+db|HW3_2.(187).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+RLE
+# storage
+db|HW3_2.(188).cnf
+db|HW3_2.(188).cnf
+# case_sensitive
+# source_file
+rle.v
+df26db188f78191a1d4bb66748b1a0
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+trigger
+# storage
+db|HW3_2.(189).cnf
+db|HW3_2.(189).cnf
+# case_sensitive
+# source_file
+trigger.v
+818ae2aaeaebb058a5c026f6ad83cc4
 0
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6432,7 +6984,71 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-Synchronization:inst74|WIN_Counter:WIN_Counter_1
+Synchronization:inst67|trigger:trigger_1
+}
+# macro_sequence
+
+# end
+# entity
+MIN_MAX
+# storage
+db|HW3_2.(190).cnf
+db|HW3_2.(190).cnf
+# case_sensitive
+# source_file
+min_max.v
+eb82d0c4a338fdff36925b06926a1bb
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+MIN_MAX_RLE:inst65|MIN_MAX:MIN_MAX_1
+}
+# macro_sequence
+
+# end
+# entity
+RLE
+# storage
+db|HW3_2.(191).cnf
+db|HW3_2.(191).cnf
+# case_sensitive
+# source_file
+rle.v
+df26db188f78191a1d4bb66748b1a0
+0
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+MIN_MAX_RLE:inst65|RLE:RLE_1
 }
 # macro_sequence
 
