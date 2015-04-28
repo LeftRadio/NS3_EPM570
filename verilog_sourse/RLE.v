@@ -1,10 +1,18 @@
-
+/**
+  ******************************************************************************
+  * @file       RLE.v
+  * @author     Neil Lab :: Left Radio
+  * @version    v2.5.0
+  * @date
+  * @brief      RLE module for LA data sourse
+  ******************************************************************************
+**/
 
 module RLE
 (
 	input [7:0]			LA_IN_DATA,
-	input       		CLK_EN,
 	input				RLE_EN,
+	input       		CLK_EN,
 	input          		CLK,
 
 	output reg [7:0]	LA_OUT_DATA,
@@ -16,6 +24,7 @@ module RLE
 reg addr_cnt_en_0;
 reg[7:0] la_in_data_0;
 reg[7:0] rle_cnt;
+
 
 
 /* */

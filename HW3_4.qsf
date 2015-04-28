@@ -25,7 +25,7 @@
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		HW3_3_assignment_defaults.qdf
+#		HW3_4_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -40,7 +40,7 @@ set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM570T144C5
 set_global_assignment -name TOP_LEVEL_ENTITY ns3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:20:32  APRIL 21, 2015"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:35:41  APRIL 28, 2015"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
@@ -158,7 +158,6 @@ set_location_assignment PIN_16 -to LA_DATA_IN[4]
 set_location_assignment PIN_18 -to LA_DATA_IN[5]
 set_location_assignment PIN_21 -to LA_DATA_IN[6]
 set_location_assignment PIN_22 -to LA_DATA_IN[7]
-set_global_assignment -name FMAX_REQUIREMENT "85 MHz" -section_id IN_CLK
 set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____19_04_12/HW2_8.dpf"
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev2_8____06_05_12/HW2_8.dpf"
@@ -166,24 +165,16 @@ set_location_assignment PIN_131 -to ADC_CLK1
 set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 80%
 set_global_assignment -name ALWAYS_ENABLE_INPUT_BUFFERS ON
-set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
 set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ADC_CLK -section_id IN_CLK_GRP
 set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ADC_CLK1 -section_id IN_CLK_GRP
 set_global_assignment -name ASSIGNMENT_GROUP_MEMBER IN_CLK -section_id IN_CLK_GRP
-set_global_assignment -name DO_COMBINED_ANALYSIS ON
-set_global_assignment -name ENABLE_RECOVERY_REMOVAL_ANALYSIS ON
-set_global_assignment -name ENABLE_CLOCK_LATENCY ON
-set_global_assignment -name REPORT_IO_PATHS_SEPARATELY ON
-set_global_assignment -name FLOW_ENABLE_TIMING_CONSTRAINT_CHECK ON
 set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP ON
 set_global_assignment -name PARALLEL_SYNTHESIS ON
 set_global_assignment -name REMOVE_REDUNDANT_LOGIC_CELLS ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
 set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
 set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev3_2/HW3_2.dpf"
-set_global_assignment -name FMAX_REQUIREMENT "10 MHz" -section_id MCU_CLK
-set_global_assignment -name DEFAULT_HOLD_MULTICYCLE ONE
-set_global_assignment -name IGNORE_CLOCK_SETTINGS ON
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ADC_DATA_A
@@ -195,31 +186,30 @@ set_instance_assignment -name NOT_A_CLOCK ON -to WR
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to WR
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to RD
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to LA_DATA_IN
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IN_CLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IN_CLK
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SRAM_DATA
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Write_Ready
 set_instance_assignment -name CUT ON -from * -to ADC_CLK1
 set_instance_assignment -name CUT ON -from * -to ADC_CLK
-set_instance_assignment -name CLOCK_SETTINGS IN_CLK -to SRAM_CLK
-set_instance_assignment -name CLOCK_SETTINGS MCU_CLK -to RD
+set_instance_assignment -name CLOCK_SETTINGS GCLK -to SRAM_CLK
 set_instance_assignment -name MAXII_OPTIMIZATION_TECHNIQUE AREA -to RS
-set_instance_assignment -name AUTO_GLOBAL_CLOCK OFF -to ADC_CLK
-set_instance_assignment -name AUTO_GLOBAL_CLOCK OFF -to ADC_CLK1
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to ADC_CLK1
 set_instance_assignment -name MAXII_OPTIMIZATION_TECHNIQUE AREA -to MCU_DATA
 set_instance_assignment -name AUTO_GLOBAL_CLOCK OFF -to RD
 set_instance_assignment -name NOT_A_CLOCK ON -to RS
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SRAM_DATA
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SRAM_ADRES
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SRAM_ADRES
-set_instance_assignment -name FAST_INPUT_REGISTER ON -to ADC_DATA_A
-set_instance_assignment -name FAST_INPUT_REGISTER ON -to ADC_DATA_B
+set_instance_assignment -name FAST_INPUT_REGISTER OFF -to ADC_DATA_A
+set_instance_assignment -name FAST_INPUT_REGISTER OFF -to ADC_DATA_B
 set_instance_assignment -name FAST_INPUT_REGISTER ON -to LA_DATA_IN
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SRAM_WE
-set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to IN_CLK
-set_instance_assignment -name SYNTH_CRITICAL_CLOCK ON -to ADC_CLK1
-set_instance_assignment -name SYNTH_CRITICAL_CLOCK ON -to ADC_CLK
+set_global_assignment -name MISC_FILE "C:/Projects/Altera/NS3_HWrev3_2_RC_copy/HW3_3.dpf"
+set_instance_assignment -name AUTO_GLOBAL_CLOCK ON -to IN_CLK
+set_global_assignment -name FMAX_REQUIREMENT "90 MHz" -section_id GCLK
+set_instance_assignment -name CLOCK_SETTINGS GCLK -to IN_CLK
 set_global_assignment -name VERILOG_FILE verilog_sourse/Decimation_counter.v
-set_global_assignment -name VERILOG_FILE verilog_sourse/LA_TRIG.v
 set_global_assignment -name VERILOG_FILE verilog_sourse/MIN_MAX_RLE.v
 set_global_assignment -name VERILOG_FILE verilog_sourse/Registers.v
 set_global_assignment -name VERILOG_FILE verilog_sourse/Synchronization.v
@@ -235,10 +225,10 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE LA_SYNC_COND.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LA_SYNC_DIFF.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ADC_SYNC_RISE_FRONT.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE VWFiles/ADC_SYNC_RISE_B.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA_RLE.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/ADC.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA_SYNC_COND.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/ADC_SYNC_FALL_B.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/ADC_SYNC_RISE_A.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/ADC.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA_RLE.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/ADC_SYNC_FALL_B.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE VWFiles/LA_SYNC_DIFF.vwf

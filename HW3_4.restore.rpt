@@ -1,5 +1,5 @@
-Restore Archived Project report for HW3_3
-Tue Apr 21 02:22:18 2015
+Restore Archived Project report for HW3_4
+Tue Apr 28 17:23:57 2015
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -36,8 +36,8 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Tue Apr 21 02:22:18 2015 ;
-; Revision Name                   ; HW3_3                                 ;
+; Restore Archived Project Status ; Successful - Tue Apr 28 17:23:57 2015 ;
+; Revision Name                   ; HW3_4                                 ;
 ; Top-level Entity Name           ; ns3                                   ;
 ; Family                          ; MAX II                                ;
 +---------------------------------+---------------------------------------+
@@ -46,8 +46,8 @@ applicable agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Projects/Altera/NS3_HWrev3_2/NS3_HWrev3_2_tmp_archive.qar' into the 'C:/Projects/Altera/NS3_HWrev3_2_copy/' directory
-Info: Generated report 'HW3_3.restore.rpt'
+Info: Successfully restored 'C:/Projects/Altera/NS3_HWrev3_2_RC_copy/NS3_HWrev3_2_tmp_archive.qar' into the 'C:/Projects/Altera/NS3_HWrev3_4/' directory
+Info: Generated report 'HW3_4.restore.rpt'
 
 
 +-------------------------------------+
@@ -58,10 +58,10 @@ Info: Generated report 'HW3_3.restore.rpt'
 ; NS3_HWrev2_8____06_05_12/HW2_8.dpf  ;
 ; NS3_HWrev2_8____06_05_12/HW2_8.sdc  ;
 ; NS3_HWrev2_8____06_05_12/NS3.sdc    ;
-; HW3_2.dpf                           ;
 ; HW3_2.sdc                           ;
-; HW3_3.qsf                           ;
-; HW3_3_assignment_defaults.qdf       ;
+; HW3_3.dpf                           ;
+; HW3_4.qsf                           ;
+; HW3_4_assignment_defaults.qdf       ;
 ; NS3.bdf                             ;
 ; NS3.sdc                             ;
 ; NS3_HWrev3_2.qpf                    ;
@@ -74,12 +74,12 @@ Info: Generated report 'HW3_3.restore.rpt'
 ; VWFiles/LA_SYNC_COND.vwf            ;
 ; VWFiles/LA_SYNC_DIFF.vwf            ;
 ; assignment_defaults.qdf             ;
-; db/HW3_3.sim.cvwf                   ;
 ; lpm_bustri0.tdf                     ;
 ; lpm_dff3.v                          ;
 ; lpm_mux1.tdf                        ;
 ; lpm_mux5.tdf                        ;
 ; unnamed.sopc                        ;
+; verilog_sourse/ADC_TRIG.v           ;
 ; verilog_sourse/Decimation_counter.v ;
 ; verilog_sourse/LA_TRIG.v            ;
 ; verilog_sourse/MIN_MAX.v            ;
@@ -88,7 +88,6 @@ Info: Generated report 'HW3_3.restore.rpt'
 ; verilog_sourse/Registers.v          ;
 ; verilog_sourse/Synchronization.v    ;
 ; verilog_sourse/WIN_Counter.v        ;
-; verilog_sourse/trigger.v            ;
 +-------------------------------------+
 
 

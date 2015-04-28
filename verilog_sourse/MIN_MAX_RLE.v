@@ -1,4 +1,14 @@
+/**
+  ******************************************************************************
+  * @file       MIN_MAX_RLE.v
+  * @author     Neil Lab :: Left Radio
+  * @version    v2.5.0
+  * @date
+  * @brief      MIN_MAX_RLE module
+  ******************************************************************************
+**/
 
+/* Internal includes */
 `include "MIN_MAX.v"
 `include "RLE.v"
 
@@ -25,25 +35,25 @@ module MIN_MAX_RLE
 
 );
 
-
 /* wires and assigns */
 wire [7:0] LA_DATA;
 wire [7:0] LA_CODE;
 
-wire [7:0] ADC_SYNC_DATA = (A_B_SOURSE == 0)? ADC_DATA_IN_A : ADC_DATA_IN_B;
+wire [7:0] ADC_SYNC_DATA = (A_B_SOURSE == 0)? adc_in_data_a : adc_in_data_b;
 wire [7:0] SYNC_DATA = (LA_SYNC_SOURSE == 0)? ADC_SYNC_DATA : LA_DATA_IN;
 
-wire [7:0] M_IN_DATA_A = (LA_DATA_SOURSE == 0)? ADC_DATA_IN_A : LA_DATA;
-wire [7:0] M_IN_DATA_B = (LA_DATA_SOURSE == 0)? ADC_DATA_IN_B : LA_CODE;
+wire [7:0] M_IN_DATA_A = (LA_DATA_SOURSE == 0)? adc_in_data_a : LA_DATA;
+wire [7:0] M_IN_DATA_B = (LA_DATA_SOURSE == 0)? adc_in_data_b : LA_CODE;
 
 wire la_addr;
 assign LA_SRAM_ADDR_CNT_EN = (~LA_DATA_SOURSE) | la_addr;
 wire RLE_EN = A_B_SOURSE;
 
-
 /* registers */
 reg [7:0] la_data_0;
+reg [7:0] adc_in_data_a, adc_in_data_b;
 reg min_max_load, min_max_load_0;
+
 
 
 /* */
@@ -51,6 +61,9 @@ always @(posedge CLK) begin
 
 	/* resync registers */
 	la_data_0 <= LA_DATA_IN;
+	adc_in_data_a <= ADC_DATA_IN_A;
+	adc_in_data_b <= ADC_DATA_IN_B;
+	
 	SYNC_OUT_DATA <= SYNC_DATA;
 	
 	/* 2 cycle delay for min/max load */
@@ -58,7 +71,6 @@ always @(posedge CLK) begin
 	min_max_load <= min_max_load_0 ;	
 	
 end
-
 
 
 
@@ -75,7 +87,6 @@ RLE  RLE_1
 	.LA_RLE_OUT_DATA(LA_CODE),
 	.LA_SRAM_ADDR_CNT_EN(la_addr)	
 );
-
 
 /* MIN/MAX module CH A */
 MIN_MAX  MIN_MAX_1
@@ -97,9 +108,6 @@ MIN_MAX  MIN_MAX_2
 	.DATA_OUT(SRAM_OUT_DATA_B)        
 );   
    
-     
-         
-
 
    
 endmodule 

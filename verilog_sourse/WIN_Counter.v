@@ -1,4 +1,12 @@
-
+/**
+  ******************************************************************************
+  * @file       WIN_Counter.v
+  * @author     Neil Lab :: Left Radio
+  * @version    v2.5.0
+  * @date
+  * @brief      WIN_Counter module
+  ******************************************************************************
+**/
 
 module WIN_Counter
 (
@@ -52,8 +60,7 @@ always @(posedge CLK) begin
 				
 		addr_cnt_en <= (cnt_en_0 | cnt_en_1) & LA_RLE_CNT_EN;		
 		wnt_cnt_en <= CNT_EN_1 & TRIG_EVENT_IN;
-		//wnt_cnt_en_0 <= wnt_cnt_en_0;
-		
+				
 		/* begining write proccess */
 		if(Write_Ready == 1'b0) begin
 		

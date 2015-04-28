@@ -1,4 +1,14 @@
+/**
+  ******************************************************************************
+  * @file       Registers.v
+  * @author     Neil Lab :: Left Radio
+  * @version    v2.5.0
+  * @date
+  * @brief      Registers module
+  ******************************************************************************
+**/
 
+/* Internal defines */
 `define Decim_Low        (5'b00000)
 `define Decim_Height0    (5'b00001)
 `define Decim_Height1    (5'b00010)
@@ -20,77 +30,78 @@
 
 module Registers
 (
-input               CLK,
-input               Addr_or_Data,
-input               Write,
-input [7:0]         SRAM_TO_MCU_DATA,
-input [7:0]         DATA_IN,
-input [4:0]         IN_KEY,
-
-output reg [7:0]    REG_DATA_OUT,
-
-output reg [23:0]   Decimation,
-output reg [7:0]    Trigger_level_UP,
-output reg [7:0]    Trigger_level_Down,
-output reg [7:0]    LA_TriggerMask_Cond,
-output reg [7:0]    LA_TriggerMask_Diff,
-
-output reg [17:0]   WIN_DATA,
-output reg [7:0]    Delay,
-output reg          Start_Write_s,
-output reg          Enable_Trigger,
-
-output INTRL_0,
-output INTRL_1,
-output Sync_channel_sel,
-output Sync_ON,
-output Sync_OUT_WIN,
-output ReadCounterEN,
-output Read_SRAM_UP,
-output ReadCounter_sLoad,
-output OSC_LA,
-output AND_OR_LA_TRIGG,
-output LA_OR_OSC_TRIGG,
-
-output S1,
-output S2,
-output O_C_A,
-output O_C_B,
-output OSC_EN,
-output A0, A1, A2,
-output B0, B1, B2,
-output BackLight_OUT
+	input               CLK,
+	input               Addr_or_Data,
+	input               Write,
+	input [7:0]         SRAM_TO_MCU_DATA,
+	input [7:0]         DATA_IN,
+	input [4:0]         IN_KEY,
+	
+	output reg [7:0]    REG_DATA_OUT,
+	
+	output reg [23:0]   Decimation,
+	output reg [7:0]    Trigger_level_UP,
+	output reg [7:0]    Trigger_level_Down,
+	output reg [7:0]    LA_TriggerMask_Cond,
+	output reg [7:0]    LA_TriggerMask_Diff,
+	
+	output reg [17:0]   WIN_DATA,
+	output reg [7:0]    Delay,
+	output reg          Start_Write_s,
+	output reg          Enable_Trigger,
+	
+	output INTRL_0,
+	output INTRL_1,
+	output Sync_channel_sel,
+	output Sync_ON,
+	output Sync_OUT_WIN,
+	output ReadCounterEN,
+	output Read_SRAM_UP,
+	output ReadCounter_sLoad,
+	output OSC_LA,
+	output AND_OR_LA_TRIGG,
+	output LA_OR_OSC_TRIGG,
+	
+	output S1,
+	output S2,
+	output O_C_A,
+	output O_C_B,
+	output OSC_EN,
+	output A0, A1, A2,
+	output B0, B1, B2,
+	output BackLight_OUT
 );
 
-assign Sync_channel_sel       = cnfPin[0];
-assign Sync_ON                = cnfPin[1];
-assign Sync_OUT_WIN           = cnfPin[2];
+/* wires and assigns */ 
+assign Sync_channel_sel		= cnfPin[0];
+assign Sync_ON 				= cnfPin[1];
+assign Sync_OUT_WIN			= cnfPin[2];
+assign ReadCounterEN		= cnfPin[3];
+assign Read_SRAM_UP			= cnfPin[4];
+assign OSC_LA				= cnfPin[5];
+assign AND_OR_LA_TRIGG		= cnfPin[6];
+assign LA_OR_OSC_TRIGG		= cnfPin[7];
 
-assign ReadCounterEN		  = cnfPin[3];
-assign Read_SRAM_UP           = cnfPin[4];
-assign ReadCounter_sLoad      = cnfPinB[0];
+assign ReadCounter_sLoad	= cnfPinB[0];
+assign INTRL_0				= cnfPinB[1];
+assign INTRL_1				= cnfPinB[2];
 
-assign INTRL_0                = cnfPinB[1];
-assign INTRL_1                = cnfPinB[2];
+assign S1					= extPin_reg_0[0];
+assign S2					= extPin_reg_0[1];
+assign O_C_A				= extPin_reg_0[2];
+assign O_C_B				= extPin_reg_0[3];
 
-assign OSC_LA                 = cnfPin[5];
-assign AND_OR_LA_TRIGG        = cnfPin[6];
-assign LA_OR_OSC_TRIGG        = cnfPin[7];
+assign A0					= extPin_reg_1[0];
+assign A1					= extPin_reg_1[1];
+assign A2					= extPin_reg_1[2];
+assign B0					= extPin_reg_1[3];
+assign B1					= extPin_reg_1[4];
+assign B2					= extPin_reg_1[5];
+assign OSC_EN				= extPin_reg_1[6];
+assign BackLight_OUT		= extPin_reg_1[7];
 
-assign S1 = extPin_reg_0[0];
-assign S2 = extPin_reg_0[1];
-assign O_C_A = extPin_reg_0[2];
-assign O_C_B = extPin_reg_0[3];
 
-assign A0 = extPin_reg_1[0];
-assign A1 = extPin_reg_1[1];
-assign A2 = extPin_reg_1[2];
-assign B0 = extPin_reg_1[3];
-assign B1 = extPin_reg_1[4];
-assign B2 = extPin_reg_1[5];
-assign OSC_EN = extPin_reg_1[6];
-assign BackLight_OUT = extPin_reg_1[7];
-
+/* registers */
 reg [4:0]    Sel_Addr_reg;
 reg [7:0]    cnfPin;
 reg [2:0]    cnfPinB;
@@ -99,21 +110,34 @@ reg [1:0]    Write_Control;
 reg [3:0]    extPin_reg_0;
 reg [7:0]    extPin_reg_1;
 
-
 reg STR, ENTr, INT_0, INT_1;
 
 
 
+/* Resync critical signals with GCLK */
+always @(posedge CLK) begin
+
+    STR <= Write_Control[0];
+    ENTr <= Write_Control[1];
+		
+	Start_Write_s <= STR;
+    Enable_Trigger <= ENTr;
+   
+end  //always
 
 
+/* MCU write */
 always @(posedge Write) begin
 	
-  if(Addr_or_Data == 1) begin
-    
-        Sel_Addr_reg <= DATA_IN[4:0];	    
+  if(Addr_or_Data == 1'b1) begin
+
+  		/* Write register address */
+        Sel_Addr_reg <= DATA_IN[4:0];
+
   end
-  else if(Addr_or_Data == 0) begin
+  else begin
        
+       /* Write data to selected register */
 	   case (Sel_Addr_reg)
 	   `Decim_Low        : Decimation[7:0]     <=  DATA_IN;
 	   `Decim_Height0    : Decimation[15:8]    <=  DATA_IN;
@@ -133,14 +157,15 @@ always @(posedge Write) begin
 	   `LA_MASK_DIFF	 : LA_TriggerMask_Diff <=  DATA_IN;
 	   default;		 
 	   endcase
-	   
+
   end	
 end  //always
 
 
+/* Data out for MCU read */
 always @* begin	//
-
-  case (Sel_Addr_reg)
+	
+  	case (Sel_Addr_reg)
 		`Decim_Low        :  REG_DATA_OUT = Decimation[7:0];
 		`Decim_Height0    :	 REG_DATA_OUT = Decimation[15:8];
 		`Decim_Height1    :	 REG_DATA_OUT = Decimation[23:16];
@@ -160,19 +185,8 @@ always @* begin	//
 		`LA_MASK_COND	  :  REG_DATA_OUT = LA_TriggerMask_Cond;
 	    `LA_MASK_DIFF	  :  REG_DATA_OUT = LA_TriggerMask_Diff;
 		default           :  REG_DATA_OUT = 0;
-  endcase
+	endcase
+
 end	//always
-
-
-// Синхрнизируем сигналы для остальной схемы
-always @(posedge CLK) begin
-
-    STR <= Write_Control[0];
-    ENTr <= Write_Control[1];
-		
-	Start_Write_s <= STR;
-    Enable_Trigger <= ENTr;
-   
-end  //always
 
 endmodule

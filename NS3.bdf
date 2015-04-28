@@ -1540,7 +1540,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 376 -936 424 -904)
+	(rect 392 -936 440 -904)
 	(text "LCELL" (rect 1 0 28 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -1952,9 +1952,33 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 400 -1664 448 -1632)
+	(rect 408 -1664 456 -1632)
 	(text "LCELL" (rect 1 0 28 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 25)(pt 14 7)(line_width 1))
+		(line (pt 14 7)(pt 32 16)(line_width 1))
+		(line (pt 14 25)(pt 32 16)(line_width 1))
+	)
+)
+(symbol
+	(rect 408 -1608 456 -1576)
+	(text "LCELL" (rect 1 0 28 10)(font "Arial" (font_size 6)))
+	(text "inst9" (rect 3 21 26 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2397,15 +2421,6 @@ applicable agreement for further details.
 	(pt 456 -1008)
 )
 (connector
-	(pt 448 -920)
-	(pt 424 -920)
-)
-(connector
-	(text "IN_CLK" (rect 314 -936 352 -924)(font "Arial" ))
-	(pt 312 -920)
-	(pt 376 -920)
-)
-(connector
 	(pt 496 -856)
 	(pt 520 -856)
 )
@@ -2814,16 +2829,29 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 288 -1592)
-	(pt 464 -1592)
+	(pt 448 -920)
+	(pt 440 -920)
+)
+(connector
+	(text "IN_CLK" (rect 338 -936 376 -924)(font "Arial" ))
+	(pt 336 -920)
+	(pt 392 -920)
 )
 (connector
 	(pt 464 -1648)
-	(pt 448 -1648)
+	(pt 456 -1648)
 )
 (connector
-	(pt 400 -1648)
 	(pt 288 -1648)
+	(pt 408 -1648)
+)
+(connector
+	(pt 464 -1592)
+	(pt 456 -1592)
+)
+(connector
+	(pt 288 -1592)
+	(pt 408 -1592)
 )
 (junction (pt 448 -1296))
 (junction (pt 448 -1440))

@@ -1,4 +1,12 @@
-
+/**
+  ******************************************************************************
+  * @file       Decimation_counter.v
+  * @author     Neil Lab :: Left Radio
+  * @version    v1.5.0
+  * @date
+  * @brief      Decimation counter for sample data
+  ******************************************************************************
+**/
 
 module Decimation_counter
 (
@@ -8,7 +16,6 @@ module Decimation_counter
 
 	output reg          EN,
 	output reg          CLK_EN
-	//output reg          WIN_CNT_EN
 );
 
 /* registers */
@@ -16,22 +23,20 @@ reg [23:0]  Deicimation_reg;
 reg rst;
 
 
-/* */
+/* IN/OUT temp registers */
 always @(posedge CLK) begin
 
 	rst <= RST;
 	CLK_EN <= EN;
-	//WIN_CNT_EN <= EN | CLK_EN; 
 
 end
+
 
 /* */
 always @(posedge CLK) begin
 		
-	if(rst == 1'b0) begin
-		
+	if(rst == 1'b0) begin		
 		EN <= 1'b0;		
-		
 	end
 	else begin
    
